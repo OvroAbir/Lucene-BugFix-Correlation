@@ -1,4 +1,5 @@
 from .json_interface import Json_Jira_Issue_Interface
+from json import dumps
 
 class User:
 	def __init__(self, name, key, display_name, user_url):
@@ -6,10 +7,6 @@ class User:
 		self.__key = key
 		self.__display_name = display_name
 		self.__user_url = user_url
-
-	def __init__(self, user_json):
-		(name, key, display_name, user_url) = User.get_user_from_json(user_json)
-		self.__init__(name, key, display_name, user_url)
 
 	def get_name(self):
 		return self.__name
@@ -23,13 +20,19 @@ class User:
 	def get_user_url(self):
 		return self.__user_url
 
-	@staticmethod
-	def get_user_from_json(user_json):
-		if (user_json == None):
-			return None
-		name = Json_Jira_Issue_Interface.__init_value("name", user_json)
-		key = Json_Jira_Issue_Interface.__init_value("key", user_json)
-		display_name = Json_Jira_Issue_Interface.__init_value("displayName", user_json)
-		self_url = Json_Jira_Issue_Interface.__init_value("self", user_json)
+	def __str__(self):
+		return "User: ( name: {}, key: {}, display name: {}, url: {} )\n"\
+			.format(self.__name, self.__key, self.__display_name, self.__user_url)
+	def __repr__(self):
+		return self.__str__()
 
-		return User(name, key, display_name, self_url)
+	@classmethod
+	def get_object_from_json(cls, json_obj):
+		if json_obj is None:
+			return None
+		name = Json_Jira_Issue_Interface.init_value_from_json("name", json_obj)
+		key = Json_Jira_Issue_Interface.init_value_from_json("key", json_obj)
+		display_name = Json_Jira_Issue_Interface.init_value_from_json("displayName", json_obj)
+		self_url = Json_Jira_Issue_Interface.init_value_from_json("self", json_obj)
+
+		return cls(name, key, display_name, self_url)
