@@ -4,7 +4,7 @@ from .jira_issue_comment import Jira_Issue_Comment
 from .jira_attachment import Jira_Attachment
 
 
-class Jira_Issue:
+class Jira_Issue_Data:
 	def __init__(self, json_data):
 		self.__id = Json_Jira_Issue_Interface.init_value_from_json("id", json_data)
 		self.__issue_rest_api_link = Json_Jira_Issue_Interface.init_value_from_json("self", json_data)
