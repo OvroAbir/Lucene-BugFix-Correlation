@@ -38,15 +38,16 @@ class Jira_Rest_Request:
 	def __construct_jql_url(arguments):
 		url = ""
 		url = url + arguments["baseurl"];
-		if("project" in arguments):
+		if "project" in arguments:
 			url = url + "project=" + arguments["project"] + "+AND+"
-		if("issueType" in arguments):
+		if "issueType" in arguments:
 			url = url + "issueType=" + arguments["issueType"] + "+AND+"
-		if("status" in arguments):
+		if "status" in arguments:
 			url = url + "status=" + arguments["status"] + "&"
-		if("maxResults" in arguments):
+		if "maxResults" in arguments:
 			url = url + "maxResults=" + arguments["maxResults"] + "&"
-		if("fields" in arguments):
+		url = url + "expand=changelog"+ "&"
+		if "fields" in arguments:
 			url = url + "fields="
 			for field in arguments["fields"]:
 				url = url + field + ","
