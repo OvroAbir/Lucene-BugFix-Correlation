@@ -15,3 +15,13 @@ class File:
 		print("Deleting file " + filename)
 		if(path.isfile(filename)):
 			remove(filename)
+
+	@staticmethod
+	def read_file(filename):
+		if(path.isfile(filename) == False):
+			print("File {} does not exist".format(filename))
+			return ""
+		data =""
+		with open(filename, 'r') as f:
+			data = f.read()
+		return data

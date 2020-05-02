@@ -1,0 +1,1776 @@
+{
+  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+  "id": "13148235",
+  "self": "https://issues.apache.org/jira/rest/api/2/issue/13148235",
+  "key": "LUCENE-8227",
+  "fields": {
+    "fixVersions": [
+      {
+        "self": "https://issues.apache.org/jira/rest/api/2/version/12340572",
+        "id": "12340572",
+        "description": "Minor release after 6.6",
+        "name": "6.7",
+        "archived": false,
+        "released": false
+      },
+      {
+        "self": "https://issues.apache.org/jira/rest/api/2/version/12342893",
+        "id": "12342893",
+        "description": "Minor release after 7.3",
+        "name": "7.4",
+        "archived": false,
+        "released": true,
+        "releaseDate": "2018-06-27"
+      },
+      {
+        "self": "https://issues.apache.org/jira/rest/api/2/version/12341050",
+        "id": "12341050",
+        "description": "First 8x release",
+        "name": "8.0",
+        "archived": false,
+        "released": true,
+        "releaseDate": "2019-03-14"
+      }
+    ],
+    "resolution": {
+      "self": "https://issues.apache.org/jira/rest/api/2/resolution/1",
+      "id": "1",
+      "description": "A fix for this issue is checked into the tree and tested.",
+      "name": "Fixed"
+    },
+    "customfield_12312322": null,
+    "customfield_12312323": null,
+    "customfield_12310420": "9223372036854775807",
+    "customfield_12312320": null,
+    "customfield_12312321": null,
+    "customfield_12312328": null,
+    "customfield_12312329": null,
+    "customfield_12312326": null,
+    "customfield_12310300": null,
+    "customfield_12312327": null,
+    "customfield_12312324": null,
+    "customfield_12312720": null,
+    "customfield_12312325": null,
+    "lastViewed": "2020-05-01T17:17:19.711+0000",
+    "priority": {
+      "self": "https://issues.apache.org/jira/rest/api/2/priority/1",
+      "iconUrl": "https://issues.apache.org/jira/images/icons/priorities/blocker.svg",
+      "name": "Blocker",
+      "id": "1"
+    },
+    "labels": [],
+    "customfield_12312333": null,
+    "customfield_12312334": null,
+    "customfield_12313422": "false",
+    "customfield_12310310": "0.0",
+    "customfield_12312331": null,
+    "customfield_12312332": null,
+    "aggregatetimeoriginalestimate": null,
+    "timeestimate": null,
+    "customfield_12312330": null,
+    "versions": [],
+    "customfield_12311120": null,
+    "customfield_12313826": null,
+    "issuelinks": [
+      {
+        "id": "12530683",
+        "self": "https://issues.apache.org/jira/rest/api/2/issueLink/12530683",
+        "type": {
+          "id": "10030",
+          "name": "Reference",
+          "inward": "is related to",
+          "outward": "relates to",
+          "self": "https://issues.apache.org/jira/rest/api/2/issueLinkType/10030"
+        },
+        "outwardIssue": {
+          "id": "13035875",
+          "key": "LUCENE-7642",
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/13035875",
+          "fields": {
+            "summary": "TestGeo3DPoint.testGeo3DRelations() failure: invalid hits for shape=GeoCompositeMembershipShape",
+            "status": {
+              "self": "https://issues.apache.org/jira/rest/api/2/status/6",
+              "description": "The issue is considered finished, the resolution is correct. Issues which are not closed can be reopened.",
+              "iconUrl": "https://issues.apache.org/jira/images/icons/statuses/closed.png",
+              "name": "Closed",
+              "id": "6",
+              "statusCategory": {
+                "self": "https://issues.apache.org/jira/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "Done"
+              }
+            },
+            "priority": {
+              "self": "https://issues.apache.org/jira/rest/api/2/priority/3",
+              "iconUrl": "https://issues.apache.org/jira/images/icons/priorities/major.svg",
+              "name": "Major",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://issues.apache.org/jira/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "A problem which impairs or prevents the functions of the product.",
+              "iconUrl": "https://issues.apache.org/jira/secure/viewavatar?size=xsmall&avatarId=21133&avatarType=issuetype",
+              "name": "Bug",
+              "subtask": false,
+              "avatarId": 21133
+            }
+          }
+        }
+      }
+    ],
+    "customfield_12312339": null,
+    "customfield_12313825": null,
+    "assignee": {
+      "self": "https://issues.apache.org/jira/rest/api/2/user?username=kwright%40metacarta.com",
+      "name": "kwright@metacarta.com",
+      "key": "kwright@metacarta.com",
+      "avatarUrls": {
+        "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=kwright%40metacarta.com&avatarId=10392",
+        "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=kwright%40metacarta.com&avatarId=10392",
+        "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=kwright%40metacarta.com&avatarId=10392",
+        "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=kwright%40metacarta.com&avatarId=10392"
+      },
+      "displayName": "Karl Wright",
+      "active": true,
+      "timeZone": "America/New_York"
+    },
+    "customfield_12312337": null,
+    "customfield_12313823": null,
+    "customfield_12312338": null,
+    "customfield_12313822": null,
+    "customfield_12311920": null,
+    "customfield_12312335": null,
+    "customfield_12313821": null,
+    "customfield_12312336": null,
+    "customfield_12313820": null,
+    "status": {
+      "self": "https://issues.apache.org/jira/rest/api/2/status/6",
+      "description": "The issue is considered finished, the resolution is correct. Issues which are not closed can be reopened.",
+      "iconUrl": "https://issues.apache.org/jira/images/icons/statuses/closed.png",
+      "name": "Closed",
+      "id": "6",
+      "statusCategory": {
+        "self": "https://issues.apache.org/jira/rest/api/2/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
+      }
+    },
+    "components": [
+      {
+        "self": "https://issues.apache.org/jira/rest/api/2/component/12313730",
+        "id": "12313730",
+        "name": "general/test",
+        "description": "issues with test related code (core or modules)"
+      },
+      {
+        "self": "https://issues.apache.org/jira/rest/api/2/component/12328200",
+        "id": "12328200",
+        "name": "modules/spatial3d"
+      }
+    ],
+    "customfield_12310120": [
+      {
+        "self": "https://issues.apache.org/jira/rest/api/2/customFieldOption/10121",
+        "value": "New",
+        "id": "10121"
+      }
+    ],
+    "customfield_12312026": null,
+    "customfield_12312023": null,
+    "customfield_12312024": null,
+    "aggregatetimeestimate": null,
+    "customfield_12312022": null,
+    "customfield_12310921": null,
+    "customfield_12310920": "9223372036854775807",
+    "customfield_12312823": null,
+    "creator": {
+      "self": "https://issues.apache.org/jira/rest/api/2/user?username=sarowe",
+      "name": "sarowe",
+      "key": "steve_rowe",
+      "avatarUrls": {
+        "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=steve_rowe&avatarId=37258",
+        "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=steve_rowe&avatarId=37258",
+        "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=steve_rowe&avatarId=37258",
+        "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=steve_rowe&avatarId=37258"
+      },
+      "displayName": "Steven Rowe",
+      "active": true,
+      "timeZone": "America/New_York"
+    },
+    "subtasks": [],
+    "reporter": {
+      "self": "https://issues.apache.org/jira/rest/api/2/user?username=sarowe",
+      "name": "sarowe",
+      "key": "steve_rowe",
+      "avatarUrls": {
+        "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=steve_rowe&avatarId=37258",
+        "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=steve_rowe&avatarId=37258",
+        "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=steve_rowe&avatarId=37258",
+        "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=steve_rowe&avatarId=37258"
+      },
+      "displayName": "Steven Rowe",
+      "active": true,
+      "timeZone": "America/New_York"
+    },
+    "aggregateprogress": {
+      "progress": 0,
+      "total": 0
+    },
+    "customfield_12313520": null,
+    "customfield_12310250": null,
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "customfield_12313924": null,
+    "votes": {
+      "self": "https://issues.apache.org/jira/rest/api/2/issue/LUCENE-8227/votes",
+      "votes": 0,
+      "hasVoted": false
+    },
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 20,
+      "total": 0,
+      "worklogs": []
+    },
+    "customfield_12313920": null,
+    "issuetype": {
+      "self": "https://issues.apache.org/jira/rest/api/2/issuetype/1",
+      "id": "1",
+      "description": "A problem which impairs or prevents the functions of the product.",
+      "iconUrl": "https://issues.apache.org/jira/secure/viewavatar?size=xsmall&avatarId=21133&avatarType=issuetype",
+      "name": "Bug",
+      "subtask": false,
+      "avatarId": 21133
+    },
+    "timespent": null,
+    "customfield_12314020": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@406cdec9[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@31bfe3cb[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@19c969da[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@57267093[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@68bff981[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@7ccd2847[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@2e1809bd[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@4ade5605[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@5dbacd2e[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@48a049ce[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@269bf486[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@1ecde02e[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
+    "customfield_12314141": null,
+    "customfield_12314140": null,
+    "project": {
+      "self": "https://issues.apache.org/jira/rest/api/2/project/12310110",
+      "id": "12310110",
+      "key": "LUCENE",
+      "name": "Lucene - Core",
+      "projectTypeKey": "software",
+      "avatarUrls": {
+        "48x48": "https://issues.apache.org/jira/secure/projectavatar?pid=12310110&avatarId=10061",
+        "24x24": "https://issues.apache.org/jira/secure/projectavatar?size=small&pid=12310110&avatarId=10061",
+        "16x16": "https://issues.apache.org/jira/secure/projectavatar?size=xsmall&pid=12310110&avatarId=10061",
+        "32x32": "https://issues.apache.org/jira/secure/projectavatar?size=medium&pid=12310110&avatarId=10061"
+      },
+      "projectCategory": {
+        "self": "https://issues.apache.org/jira/rest/api/2/projectCategory/10150",
+        "id": "10150",
+        "description": "Lucene-related projects",
+        "name": "Lucene"
+      }
+    },
+    "aggregatetimespent": null,
+    "customfield_12310220": "2018-03-27T18:53:16.085+0000",
+    "customfield_12312520": null,
+    "customfield_12312521": "Fri Mar 30 12:41:29 UTC 2018",
+    "customfield_12310222": "1_*:*_1_*:*_253784011_*|*_5_*:*_1_*:*_0",
+    "customfield_12314146": null,
+    "customfield_12314145": null,
+    "customfield_12314144": null,
+    "customfield_12314143": null,
+    "resolutiondate": "2018-03-30T12:43:38.342+0000",
+    "customfield_12314142": null,
+    "workratio": -1,
+    "customfield_12312923": null,
+    "customfield_12312920": null,
+    "customfield_12312921": null,
+    "watches": {
+      "self": "https://issues.apache.org/jira/rest/api/2/issue/LUCENE-8227/watchers",
+      "watchCount": 5,
+      "isWatching": false
+    },
+    "created": "2018-03-27T14:13:54.367+0000",
+    "updated": "2019-10-02T17:23:40.020+0000",
+    "timeoriginalestimate": null,
+    "description": "Three failures: two NPEs and one assert \"assess edge that ends in a crossing can't both up and down\":\r\n\r\n1.a. (NPE) From [https://builds.apache.org/job/Lucene-Solr-NightlyTests-master/1512/]:\r\n\r\n{noformat}\r\n   [junit4]   2> NOTE: reproduce with: ant test  -Dtestcase=TestGeo3DPoint -Dtests.method=testGeo3DRelations -Dtests.seed=C1F88333EC85EAE0 -Dtests.multiplier=2 -Dtests.nightly=true -Dtests.slow=true -Dtests.linedocsfile=/home/jenkins/jenkins-slave/workspace/Lucene-Solr-NightlyTests-master/test-data/enwiki.random.lines.txt -Dtests.locale=ga -Dtests.timezone=America/Ojinaga -Dtests.asserts=true -Dtests.file.encoding=UTF-8\r\n   [junit4] ERROR   10.4s J1 | TestGeo3DPoint.testGeo3DRelations <<<\r\n   [junit4]    > Throwable #1: java.lang.NullPointerException\r\n   [junit4]    > \tat __randomizedtesting.SeedInfo.seed([C1F88333EC85EAE0:7187FEA763C8447C]:0)\r\n   [junit4]    > \tat org.apache.lucene.spatial3d.geom.GeoComplexPolygon$DualCrossingEdgeIterator.countCrossingPoint(GeoComplexPolygon.java:1382)\r\n   [junit4]    > \tat org.apache.lucene.spatial3d.geom.GeoComplexPolygon$DualCrossingEdgeIterator.matches(GeoComplexPolygon.java:1283)\r\n   [junit4]    > \tat org.apache.lucene.spatial3d.geom.GeoComplexPolygon$Node.traverse(GeoComplexPolygon.java:564)\r\n   [junit4]    > \tat org.apache.lucene.spatial3d.geom.GeoComplexPolygon$Node.traverse(GeoComplexPolygon.java:572)\r\n   [junit4]    > \tat org.apache.lucene.spatial3d.geom.GeoComplexPolygon$Node.traverse(GeoComplexPolygon.java:569)\r\n   [junit4]    > \tat org.apache.lucene.spatial3d.geom.GeoComplexPolygon$Tree.traverse(GeoComplexPolygon.java:660)\r\n   [junit4]    > \tat org.apache.lucene.spatial3d.geom.GeoComplexPolygon$Tree.traverse(GeoComplexPolygon.java:646)\r\n   [junit4]    > \tat org.apache.lucene.spatial3d.geom.GeoComplexPolygon.isWithin(GeoComplexPolygon.java:370)\r\n   [junit4]    > \tat org.apache.lucene.spatial3d.geom.GeoBaseMembershipShape.isWithin(GeoBaseMembershipShape.java:36)\r\n   [junit4]    > \tat org.apache.lucene.spatial3d.geom.GeoBaseShape.getBounds(GeoBaseShape.java:35)\r\n   [junit4]    > \tat org.apache.lucene.spatial3d.geom.GeoComplexPolygon.getBounds(GeoComplexPolygon.java:440)\r\n   [junit4]    > \tat org.apache.lucene.spatial3d.TestGeo3DPoint.testGeo3DRelations(TestGeo3DPoint.java:225)\r\n   [junit4]    > \tat java.lang.Thread.run(Thread.java:748)\r\n{noformat}\r\n\r\n1.b. (NPE) From [https://builds.apache.org/job/Lucene-Solr-SmokeRelease-7.x/184/]:\r\n\r\n{noformat}\r\n   [smoker]    [junit4]   2> NOTE: reproduce with: ant test  -Dtestcase=TestGeo3DPoint -Dtests.method=testGeo3DRelations -Dtests.seed=F2A368AB96A2FD75 -Dtests.multiplier=2 -Dtests.locale=fr-ML -Dtests.timezone=America/Godthab -Dtests.asserts=true -Dtests.file.encoding=UTF-8\r\n   [smoker]    [junit4] ERROR   0.99s J0 | TestGeo3DPoint.testGeo3DRelations <<<\r\n   [smoker]    [junit4]    > Throwable #1: java.lang.NullPointerException\r\n   [smoker]    [junit4]    > \tat __randomizedtesting.SeedInfo.seed([F2A368AB96A2FD75:42DC153F19EF53E9]:0)\r\n   [smoker]    [junit4]    > \tat org.apache.lucene.spatial3d.geom.GeoComplexPolygon$DualCrossingEdgeIterator.countCrossingPoint(GeoComplexPolygon.java:1382)\r\n   [smoker]    [junit4]    > \tat org.apache.lucene.spatial3d.geom.GeoComplexPolygon$DualCrossingEdgeIterator.matches(GeoComplexPolygon.java:1283)\r\n   [smoker]    [junit4]    > \tat org.apache.lucene.spatial3d.geom.GeoComplexPolygon$Node.traverse(GeoComplexPolygon.java:564)\r\n   [smoker]    [junit4]    > \tat org.apache.lucene.spatial3d.geom.GeoComplexPolygon$Node.traverse(GeoComplexPolygon.java:572)\r\n   [smoker]    [junit4]    > \tat org.apache.lucene.spatial3d.geom.GeoComplexPolygon$Node.traverse(GeoComplexPolygon.java:572)\r\n   [smoker]    [junit4]    > \tat org.apache.lucene.spatial3d.geom.GeoComplexPolygon$Tree.traverse(GeoComplexPolygon.java:660)\r\n   [smoker]    [junit4]    > \tat org.apache.lucene.spatial3d.geom.GeoComplexPolygon$Tree.traverse(GeoComplexPolygon.java:646)\r\n   [smoker]    [junit4]    > \tat org.apache.lucene.spatial3d.geom.GeoComplexPolygon.isWithin(GeoComplexPolygon.java:370)\r\n   [smoker]    [junit4]    > \tat org.apache.lucene.spatial3d.geom.GeoBaseMembershipShape.isWithin(GeoBaseMembershipShape.java:36)\r\n   [smoker]    [junit4]    > \tat org.apache.lucene.spatial3d.geom.GeoBaseShape.getBounds(GeoBaseShape.java:43)\r\n   [smoker]    [junit4]    > \tat org.apache.lucene.spatial3d.geom.GeoComplexPolygon.getBounds(GeoComplexPolygon.java:440)\r\n   [smoker]    [junit4]    > \tat org.apache.lucene.spatial3d.TestGeo3DPoint.testGeo3DRelations(TestGeo3DPoint.java:224)\r\n   [smoker]    [junit4]    > \tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n   [smoker]    [junit4]    > \tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n   [smoker]    [junit4]    > \tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n   [smoker]    [junit4]    > \tat java.base/java.lang.reflect.Method.invoke(Method.java:564)\r\n   [smoker]    [junit4]    > \tat java.base/java.lang.Thread.run(Thread.java:844)\r\n{noformat}\r\n\r\n2. (both up&down) From [https://jenkins.thetaphi.de/job/Lucene-Solr-7.x-Linux/1598/]:\r\n\r\n{noformat}\r\n   [junit4]   2> NOTE: reproduce with: ant test  -Dtestcase=TestGeo3DPoint -Dtests.method=testGeo3DRelations -Dtests.seed=BACC479CC2D38CCA -Dtests.multiplier=3 -Dtests.slow=true -Dtests.badapples=true -Dtests.locale=lv -Dtests.timezone=SystemV/AST4ADT -Dtests.asserts=true -Dtests.file.encoding=UTF-8\r\n   [junit4] FAILURE 3.01s J2 | TestGeo3DPoint.testGeo3DRelations <<<\r\n   [junit4]    > Throwable #1: java.lang.AssertionError: assess edge that ends in a crossing can't both up and down\r\n   [junit4]    > \tat __randomizedtesting.SeedInfo.seed([BACC479CC2D38CCA:AB33A084D9E2256]:0)\r\n   [junit4]    > \tat org.apache.lucene.spatial3d.geom.GeoComplexPolygon$DualCrossingEdgeIterator.countCrossingPoint(GeoComplexPolygon.java:1438)\r\n   [junit4]    > \tat org.apache.lucene.spatial3d.geom.GeoComplexPolygon$DualCrossingEdgeIterator.matches(GeoComplexPolygon.java:1283)\r\n   [junit4]    > \tat org.apache.lucene.spatial3d.geom.GeoComplexPolygon$Node.traverse(GeoComplexPolygon.java:564)\r\n   [junit4]    > \tat org.apache.lucene.spatial3d.geom.GeoComplexPolygon$Tree.traverse(GeoComplexPolygon.java:660)\r\n   [junit4]    > \tat org.apache.lucene.spatial3d.geom.GeoComplexPolygon$Tree.traverse(GeoComplexPolygon.java:646)\r\n   [junit4]    > \tat org.apache.lucene.spatial3d.geom.GeoComplexPolygon.isWithin(GeoComplexPolygon.java:370)\r\n   [junit4]    > \tat org.apache.lucene.spatial3d.geom.GeoBaseMembershipShape.isWithin(GeoBaseMembershipShape.java:36)\r\n   [junit4]    > \tat org.apache.lucene.spatial3d.geom.GeoBaseShape.getBounds(GeoBaseShape.java:43)\r\n   [junit4]    > \tat org.apache.lucene.spatial3d.geom.GeoComplexPolygon.getBounds(GeoComplexPolygon.java:440)\r\n   [junit4]    > \tat org.apache.lucene.spatial3d.TestGeo3DPoint.testGeo3DRelations(TestGeo3DPoint.java:224)\r\n   [junit4]    > \tat java.lang.Thread.run(Thread.java:748)\r\n{noformat}\r\n",
+    "customfield_10010": null,
+    "timetracking": {},
+    "customfield_12314127": null,
+    "customfield_12314126": null,
+    "customfield_12314125": null,
+    "customfield_12314124": null,
+    "customfield_12312340": null,
+    "attachment": [],
+    "customfield_12314123": null,
+    "customfield_12312341": null,
+    "customfield_12312220": null,
+    "customfield_12314122": null,
+    "customfield_12314121": null,
+    "customfield_12314120": null,
+    "customfield_12314129": null,
+    "customfield_12314128": null,
+    "summary": "TestGeo3DPoint.testGeo3DRelations() reproducing failures",
+    "customfield_12314130": null,
+    "customfield_12310291": null,
+    "customfield_12310290": null,
+    "customfield_12311024": null,
+    "customfield_12314138": null,
+    "customfield_12314137": null,
+    "environment": null,
+    "customfield_12314136": null,
+    "customfield_12314135": null,
+    "customfield_12311020": null,
+    "customfield_12314134": null,
+    "customfield_12313320": "<p style=\"color:red;font-weight:bold;text-align:center\">\r\nThis project has a user mailing list and an IRC channel for support. Please ensure that you have discussed your problem using one of those <a target=\"_blank\"  href=\"https://lucene.apache.org/core/discussion.html#lucenetm-mailing-lists-and-irc\">resources</a> BEFORE creating this ticket.</p>",
+    "duedate": null,
+    "customfield_12314132": null,
+    "customfield_12314131": null,
+    "comment": {
+      "comments": [
+        {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/13148235/comment/16416092",
+          "id": "16416092",
+          "author": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=kwright%40metacarta.com",
+            "name": "kwright@metacarta.com",
+            "key": "kwright@metacarta.com",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=kwright%40metacarta.com&avatarId=10392",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=kwright%40metacarta.com&avatarId=10392"
+            },
+            "displayName": "Karl Wright",
+            "active": true,
+            "timeZone": "America/New_York"
+          },
+          "body": "The NPEs are caused when travel planes are identical to edges.  This is relatively easy to address, but needs to be carefully coded.\r\n\r\nThe assertion failures are a bit tougher because they indicate we don't understand the geometry properly in some situations.  I'll have to look into these in more depth.\r\n",
+          "updateAuthor": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=kwright%40metacarta.com",
+            "name": "kwright@metacarta.com",
+            "key": "kwright@metacarta.com",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=kwright%40metacarta.com&avatarId=10392",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=kwright%40metacarta.com&avatarId=10392"
+            },
+            "displayName": "Karl Wright",
+            "active": true,
+            "timeZone": "America/New_York"
+          },
+          "created": "2018-03-27T18:53:16.085+0000",
+          "updated": "2018-03-27T18:53:16.085+0000"
+        },
+        {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/13148235/comment/16416432",
+          "id": "16416432",
+          "author": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=jira-bot",
+            "name": "jira-bot",
+            "key": "jira-bot",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+            },
+            "displayName": "ASF subversion and git services",
+            "active": true,
+            "timeZone": "Etc/UTC"
+          },
+          "body": "Commit 6dcb6ae64155921ffb2841732844c9b8776968bd in lucene-solr's branch refs/heads/master from [~kwright@metacarta.com]\n[ https://git-wip-us.apache.org/repos/asf?p=lucene-solr.git;h=6dcb6ae ]\n\nLUCENE-8227: Handle identical planes properly in GeoComplexPolygon.\n",
+          "updateAuthor": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=jira-bot",
+            "name": "jira-bot",
+            "key": "jira-bot",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+            },
+            "displayName": "ASF subversion and git services",
+            "active": true,
+            "timeZone": "Etc/UTC"
+          },
+          "created": "2018-03-27T23:06:09.353+0000",
+          "updated": "2018-03-27T23:06:09.353+0000"
+        },
+        {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/13148235/comment/16416434",
+          "id": "16416434",
+          "author": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=jira-bot",
+            "name": "jira-bot",
+            "key": "jira-bot",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+            },
+            "displayName": "ASF subversion and git services",
+            "active": true,
+            "timeZone": "Etc/UTC"
+          },
+          "body": "Commit e656091690b7efc869da5eb2702791152070b388 in lucene-solr's branch refs/heads/branch_7x from [~kwright@metacarta.com]\n[ https://git-wip-us.apache.org/repos/asf?p=lucene-solr.git;h=e656091 ]\n\nLUCENE-8227: Handle identical planes properly in GeoComplexPolygon.\n",
+          "updateAuthor": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=jira-bot",
+            "name": "jira-bot",
+            "key": "jira-bot",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+            },
+            "displayName": "ASF subversion and git services",
+            "active": true,
+            "timeZone": "Etc/UTC"
+          },
+          "created": "2018-03-27T23:06:43.763+0000",
+          "updated": "2018-03-27T23:06:43.763+0000"
+        },
+        {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/13148235/comment/16416435",
+          "id": "16416435",
+          "author": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=jira-bot",
+            "name": "jira-bot",
+            "key": "jira-bot",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+            },
+            "displayName": "ASF subversion and git services",
+            "active": true,
+            "timeZone": "Etc/UTC"
+          },
+          "body": "Commit 9b05d5676d01a09635b403cd7057c7207735e3e2 in lucene-solr's branch refs/heads/branch_6x from [~kwright@metacarta.com]\n[ https://git-wip-us.apache.org/repos/asf?p=lucene-solr.git;h=9b05d56 ]\n\nLUCENE-8227: Handle identical planes properly in GeoComplexPolygon.\n",
+          "updateAuthor": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=jira-bot",
+            "name": "jira-bot",
+            "key": "jira-bot",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+            },
+            "displayName": "ASF subversion and git services",
+            "active": true,
+            "timeZone": "Etc/UTC"
+          },
+          "created": "2018-03-27T23:07:13.285+0000",
+          "updated": "2018-03-27T23:07:13.285+0000"
+        },
+        {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/13148235/comment/16416442",
+          "id": "16416442",
+          "author": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=kwright%40metacarta.com",
+            "name": "kwright@metacarta.com",
+            "key": "kwright@metacarta.com",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=kwright%40metacarta.com&avatarId=10392",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=kwright%40metacarta.com&avatarId=10392"
+            },
+            "displayName": "Karl Wright",
+            "active": true,
+            "timeZone": "America/New_York"
+          },
+          "body": "Committed code that should fix the NPEs.  The assertions are also fixed.  However, we still see failures in cases 2 and 3 due to incorrect edge-crossing logic that need to be worked out, so this ticket is not yet complete.\r\n",
+          "updateAuthor": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=kwright%40metacarta.com",
+            "name": "kwright@metacarta.com",
+            "key": "kwright@metacarta.com",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=kwright%40metacarta.com&avatarId=10392",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=kwright%40metacarta.com&avatarId=10392"
+            },
+            "displayName": "Karl Wright",
+            "active": true,
+            "timeZone": "America/New_York"
+          },
+          "created": "2018-03-27T23:09:16.497+0000",
+          "updated": "2018-03-27T23:09:16.497+0000"
+        },
+        {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/13148235/comment/16416832",
+          "id": "16416832",
+          "author": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=kwright%40metacarta.com",
+            "name": "kwright@metacarta.com",
+            "key": "kwright@metacarta.com",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=kwright%40metacarta.com&avatarId=10392",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=kwright%40metacarta.com&avatarId=10392"
+            },
+            "displayName": "Karl Wright",
+            "active": true,
+            "timeZone": "America/New_York"
+          },
+          "body": "This is the failure case I'm going to convert to a unit test first:\r\n\r\n{code}\r\n   [junit4]   1>     doc=2333 is contained by shape but is outside the returned XYZBounds\r\n   [junit4]   1>       unquantized=[lat=-3.1780051348770987E-74, lon=-3.032608859187692([X=-0.9951793580358298, Y=-0.1088898762907205, Z=-3.181560858610375E-74])]\r\n   [junit4]   1>       quantized=[X=-0.9951793580415914, Y=-0.10888987641797832, Z=-2.3309121299774915E-10]\r\n{code}\r\n\r\n{code}\r\n   [junit4]   1>   shape=GeoComplexPolygon:\r\n{planetmodel=PlanetModel.WGS84, \r\n number of shapes=1, \r\n address=40c76856, \r\n testPoint=[X=0.38044889065958476, Y=-0.47772089071622287, Z=0.7906122375677148], \r\n testPointInSet=true, \r\n shapes={ {\r\n  [lat=-0.63542308910253, lon=0.9853722928232957([X=0.4446759777403525, Y=0.6707549854468698, Z=-0.5934780737681111])], \r\n  [lat=0.0, lon=0.0([X=1.0011188539924791, Y=0.0, Z=0.0])], [lat=0.45435018176633574, lon=3.141592653589793([X=-0.8989684544372841, Y=1.1009188402610632E-16, Z=0.4390846549572752])], \r\n  [lat=-0.375870856827283, lon=2.9129132647718414([X=-0.9065744420970767, Y=0.21100590938346708, Z=-0.36732668582405886])], \r\n  [lat=-1.2205765069413237, lon=3.141592653589793([X=-0.3424714964202101, Y=4.194066218902145E-17, Z=-0.9375649457139603])]}}\r\n{code}\r\n\r\n{code}\r\n   [junit4]   1>   bounds=XYZBounds: [xmin=-0.9936143692718389 xmax=1.0011188549924792 ymin=-1.0011188549924792 ymax=0.6707549864468698 zmin=-0.9977622930221051 zmax=0.9977622930221051]\r\n{code}\r\n\r\n",
+          "updateAuthor": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=kwright%40metacarta.com",
+            "name": "kwright@metacarta.com",
+            "key": "kwright@metacarta.com",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=kwright%40metacarta.com&avatarId=10392",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=kwright%40metacarta.com&avatarId=10392"
+            },
+            "displayName": "Karl Wright",
+            "active": true,
+            "timeZone": "America/New_York"
+          },
+          "created": "2018-03-28T05:16:15.128+0000",
+          "updated": "2018-03-28T05:16:15.128+0000"
+        },
+        {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/13148235/comment/16416863",
+          "id": "16416863",
+          "author": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=kwright%40metacarta.com",
+            "name": "kwright@metacarta.com",
+            "key": "kwright@metacarta.com",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=kwright%40metacarta.com&avatarId=10392",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=kwright%40metacarta.com&avatarId=10392"
+            },
+            "displayName": "Karl Wright",
+            "active": true,
+            "timeZone": "America/New_York"
+          },
+          "body": "Correction -- it's not clear whether it's edge-crossing logic that is at fault.\r\nI think there's a reasonable chance that the issue could be the bounds computation.  It's a wacky polygon that includes most of the ends of the earth so I could believe we fail in some way to compute bounds properly.  Will need to analyze.",
+          "updateAuthor": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=kwright%40metacarta.com",
+            "name": "kwright@metacarta.com",
+            "key": "kwright@metacarta.com",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=kwright%40metacarta.com&avatarId=10392",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=kwright%40metacarta.com&avatarId=10392"
+            },
+            "displayName": "Karl Wright",
+            "active": true,
+            "timeZone": "America/New_York"
+          },
+          "created": "2018-03-28T06:02:38.398+0000",
+          "updated": "2018-03-28T06:02:38.398+0000"
+        },
+        {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/13148235/comment/16417171",
+          "id": "16417171",
+          "author": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=kwright%40metacarta.com",
+            "name": "kwright@metacarta.com",
+            "key": "kwright@metacarta.com",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=kwright%40metacarta.com&avatarId=10392",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=kwright%40metacarta.com&avatarId=10392"
+            },
+            "displayName": "Karl Wright",
+            "active": true,
+            "timeZone": "America/New_York"
+          },
+          "body": "The following test demonstrates that the problem is in computing the bounds, and doesn't have anything specific to do with GeoComplexPolygons:\r\n\r\n{code}\r\n  public void testLUCENE8227() throws Exception {\r\n    List<GeoPoint> points = new ArrayList<>();\r\n    points.add(new GeoPoint(PlanetModel.WGS84, -0.63542308910253, 0.9853722928232957));\r\n    points.add(new GeoPoint(PlanetModel.WGS84, 0.0, 0.0));\r\n    points.add(new GeoPoint(PlanetModel.WGS84, 0.45435018176633574, 3.141592653589793));\r\n    points.add(new GeoPoint(PlanetModel.WGS84, -0.375870856827283, 2.9129132647718414));\r\n    points.add(new GeoPoint(PlanetModel.WGS84, -1.2205765069413237, 3.141592653589793));\r\n    GeoPolygonFactory.PolygonDescription pd = new GeoPolygonFactory.PolygonDescription(points);\r\n    \r\n    final GeoPoint unquantized = new GeoPoint(PlanetModel.WGS84, -3.1780051348770987E-74, -3.032608859187692);\r\n    final GeoPoint quantized = new GeoPoint(-0.9951793580415914, -0.10888987641797832, -2.3309121299774915E-10);\r\n    \r\n    // Construct a standard polygon first to see what that does\r\n    GeoPolygon standard = GeoPolygonFactory.makeGeoPolygon(PlanetModel.WGS84, pd);\r\n    assertTrue(standard.isWithin(quantized));\r\n    assertTrue(standard.isWithin(unquantized));\r\n    \r\n    // Make sure that a large polygon works the same\r\n    final List<GeoPolygonFactory.PolygonDescription> pdList = new ArrayList<>(1);\r\n    pdList.add(pd);\r\n    GeoPolygon large = GeoPolygonFactory.makeLargeGeoPolygon(PlanetModel.WGS84, pdList);\r\n    \r\n    // This should behave the same as the standard guy\r\n    assertTrue(large.isWithin(quantized));\r\n    assertTrue(large.isWithin(unquantized));\r\n    \r\n    // Next, compute the bounds for both of these\r\n    final XYZBounds standardBounds = new XYZBounds();\r\n    standard.getBounds(standardBounds);\r\n    final XYZBounds largeBounds = new XYZBounds();\r\n    large.getBounds(largeBounds);\r\n    \r\n    final XYZSolid standardSolid = XYZSolidFactory.makeXYZSolid(PlanetModel.WGS84, standardBounds);\r\n    final XYZSolid largeSolid = XYZSolidFactory.makeXYZSolid(PlanetModel.WGS84, largeBounds);\r\n    \r\n    // All four of these fail.\r\n    //assertTrue(standardSolid.isWithin(quantized));\r\n    //assertTrue(standardSolid.isWithin(unquantized));\r\n    \r\n    //assertTrue(largeSolid.isWithin(quantized));\r\n    //assertTrue(largeSolid.isWithin(unquantized));\r\n\r\n  }\r\n{code}",
+          "updateAuthor": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=kwright%40metacarta.com",
+            "name": "kwright@metacarta.com",
+            "key": "kwright@metacarta.com",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=kwright%40metacarta.com&avatarId=10392",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=kwright%40metacarta.com&avatarId=10392"
+            },
+            "displayName": "Karl Wright",
+            "active": true,
+            "timeZone": "America/New_York"
+          },
+          "created": "2018-03-28T11:04:39.481+0000",
+          "updated": "2018-03-28T11:04:39.481+0000"
+        },
+        {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/13148235/comment/16417177",
+          "id": "16417177",
+          "author": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=kwright%40metacarta.com",
+            "name": "kwright@metacarta.com",
+            "key": "kwright@metacarta.com",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=kwright%40metacarta.com&avatarId=10392",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=kwright%40metacarta.com&avatarId=10392"
+            },
+            "displayName": "Karl Wright",
+            "active": true,
+            "timeZone": "America/New_York"
+          },
+          "body": "Bounds are the same too for standard vs. large:\r\n\r\n{code}\r\n   [junit4] Suite: org.apache.lucene.spatial3d.geom.GeoPolygonTest\r\n   [junit4]   1> Standard bounds: XYZBounds: [xmin=-0.9936143692718389 xmax=1.0011188549924792 ymin=-1.0011188549924792 ymax=0.6707549864468698 zmin=-0.9977622930221051 zmax=0.9977622930221051]\r\n   [junit4]   1> Large bounds: XYZBounds: [xmin=-0.9936143692718389 xmax=1.0011188549924792 ymin=-1.0011188549924792 ymax=0.6707549864468698 zmin=-0.9977622930221051 zmax=0.9977622930221051]\r\n{code}\r\n\r\nThe point's X, Y, Z are:\r\n\r\n{code}\r\n[X=-0.9951793580358298, Y=-0.1088898762907205, Z=-3.181560858610375E-74]\r\n{code}\r\n\r\nThe problem is that the point's X is less than xmin.",
+          "updateAuthor": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=kwright%40metacarta.com",
+            "name": "kwright@metacarta.com",
+            "key": "kwright@metacarta.com",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=kwright%40metacarta.com&avatarId=10392",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=kwright%40metacarta.com&avatarId=10392"
+            },
+            "displayName": "Karl Wright",
+            "active": true,
+            "timeZone": "America/New_York"
+          },
+          "created": "2018-03-28T11:11:41.257+0000",
+          "updated": "2018-03-28T11:11:41.257+0000"
+        },
+        {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/13148235/comment/16417182",
+          "id": "16417182",
+          "author": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=kwright%40metacarta.com",
+            "name": "kwright@metacarta.com",
+            "key": "kwright@metacarta.com",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=kwright%40metacarta.com&avatarId=10392",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=kwright%40metacarta.com&avatarId=10392"
+            },
+            "displayName": "Karl Wright",
+            "active": true,
+            "timeZone": "America/New_York"
+          },
+          "body": "The points that go into constructing the polygon are not what sets bounds in this case:\r\n\r\n{code}\r\n[X=0.4446759777403525, Y=0.6707549854468698, Z=-0.5934780737681111]\r\n[X=1.0011188539924791, Y=0.0, Z=0.0]\r\n[X=-0.8989684544372841, Y=1.1009188402610632E-16, Z=0.4390846549572752]\r\n[X=-0.9065744420970767, Y=0.21100590938346708, Z=-0.36732668582405886]\r\n[X=-0.3424714964202101, Y=4.194066218902145E-17, Z=-0.9375649457139603]\r\n{code}\r\n\r\nClearly the edge bounds code is not doing the right thing in this situation.  That's the next place to write a test for and/or analyze.\r\n",
+          "updateAuthor": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=kwright%40metacarta.com",
+            "name": "kwright@metacarta.com",
+            "key": "kwright@metacarta.com",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=kwright%40metacarta.com&avatarId=10392",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=kwright%40metacarta.com&avatarId=10392"
+            },
+            "displayName": "Karl Wright",
+            "active": true,
+            "timeZone": "America/New_York"
+          },
+          "created": "2018-03-28T11:17:03.839+0000",
+          "updated": "2018-03-28T11:17:03.839+0000"
+        },
+        {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/13148235/comment/16417193",
+          "id": "16417193",
+          "author": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=ivera",
+            "name": "ivera",
+            "key": "ivera",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+            },
+            "displayName": "Ignacio Vera",
+            "active": true,
+            "timeZone": "Etc/UTC"
+          },
+          "body": "[~kwright@metacarta.com] currently you are generating in both cases the same polygon as in the standard polygon cannot be created because of a TileException.\r\n\r\nOne thing to note is that the polygon is concave (covers both poles) and probably that is the reason bounds are not properly computed.\r\n\r\n ",
+          "updateAuthor": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=ivera",
+            "name": "ivera",
+            "key": "ivera",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+            },
+            "displayName": "Ignacio Vera",
+            "active": true,
+            "timeZone": "Etc/UTC"
+          },
+          "created": "2018-03-28T11:20:54.161+0000",
+          "updated": "2018-03-28T11:20:54.161+0000"
+        },
+        {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/13148235/comment/16417255",
+          "id": "16417255",
+          "author": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=kwright%40metacarta.com",
+            "name": "kwright@metacarta.com",
+            "key": "kwright@metacarta.com",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=kwright%40metacarta.com&avatarId=10392",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=kwright%40metacarta.com&avatarId=10392"
+            },
+            "displayName": "Karl Wright",
+            "active": true,
+            "timeZone": "America/New_York"
+          },
+          "body": "Adding x-bounds logging yields the following dump:\r\n\r\n{code}\r\n   [junit4]   1> Computing new x bound for plane [A=0.6890973226271416, B=-0.6795484036912525; C=-0.2517118332315264; D=0.0]\r\n   [junit4]   1>  x-bound point1: [X=-0.7253404115923568, Y=-0.6473134187879598, Z=-0.2381665352265543]\r\n   [junit4]   1>  x-bound point2: [X=0.7253404115923568, Y=0.6473134187879598, Z=0.2381665352265543]\r\n   [junit4]   1> Computing new x bound for plane [A=0.0, B=-0.6626477256017624; C=-0.7489312329945998; D=0.0]\r\n   [junit4]   1>  x-bound point1: [X=-1.0011188539924791, Y=-0.0, Z=-0.0]\r\n   [junit4]   1>  x-bound point2: [X=1.0011188539924791, Y=0.0, Z=0.0]\r\n   [junit4]   1> Computing new x bound for plane [A=0.0, B=-1.0; C=2.5073042927637435E-16; D=0.0]\r\n   [junit4]   1>  x-bound point1: [X=-1.0011188539924791, Y=-0.0, Z=0.0]\r\n   [junit4]   1>  x-bound point2: [X=1.0011188539924791, Y=0.0, Z=-0.0]\r\n   [junit4]   1> Computing new x bound for plane [A=-0.12218735010855987, B=-0.9604628616740691; C=-0.25016263273779726; D=0.0]\r\n   [junit4]   1>  x-bound point1: [X=-0.9936143682718389, Y=0.11842468105083435, Z=0.030638463267361405]\r\n   [junit4]   1>  x-bound point2: [X=0.9936143682718389, Y=-0.11842468105083435, Z=-0.030638463267361405]\r\n   [junit4]   1> Computing new x bound for plane [A=-0.2623138822938212, B=-0.9602137546257182; C=0.09581739186350438; D=0.0]\r\n   [junit4]   1>  x-bound point1: [X=-0.9660600853870557, Y=0.26132624795300813, Z=-0.02590253971121584]\r\n   [junit4]   1>  x-bound point2: [X=0.9660600853870557, Y=-0.26132624795300813, Z=0.02590253971121584]\r\n   [junit4]   1> Computing new x bound for plane [A=0.6890973226271416, B=-0.6795484036912525; C=-0.2517118332315264; D=0.0]\r\n   [junit4]   1>  x-bound point1: [X=-0.7253404115923568, Y=-0.6473134187879598, Z=-0.2381665352265543]\r\n   [junit4]   1>  x-bound point2: [X=0.7253404115923568, Y=0.6473134187879598, Z=0.2381665352265543]\r\n   [junit4]   1> Computing new x bound for plane [A=0.0, B=-0.6626477256017624; C=-0.7489312329945998; D=0.0]\r\n   [junit4]   1>  x-bound point1: [X=-1.0011188539924791, Y=-0.0, Z=-0.0]\r\n   [junit4]   1>  x-bound point2: [X=1.0011188539924791, Y=0.0, Z=0.0]\r\n   [junit4]   1> Computing new x bound for plane [A=0.0, B=-1.0; C=2.5073042927637435E-16; D=0.0]\r\n   [junit4]   1>  x-bound point1: [X=-1.0011188539924791, Y=-0.0, Z=0.0]\r\n   [junit4]   1>  x-bound point2: [X=1.0011188539924791, Y=0.0, Z=-0.0]\r\n   [junit4]   1> Computing new x bound for plane [A=-0.12218735010855987, B=-0.9604628616740691; C=-0.25016263273779726; D=0.0]\r\n   [junit4]   1>  x-bound point1: [X=-0.9936143682718389, Y=0.11842468105083435, Z=0.030638463267361405]\r\n   [junit4]   1>  x-bound point2: [X=0.9936143682718389, Y=-0.11842468105083435, Z=-0.030638463267361405]\r\n   [junit4]   1> Computing new x bound for plane [A=-0.2623138822938212, B=-0.9602137546257182; C=0.09581739186350438; D=0.0]\r\n   [junit4]   1>  x-bound point1: [X=-0.9660600853870557, Y=0.26132624795300813, Z=-0.02590253971121584]\r\n   [junit4]   1>  x-bound point2: [X=0.9660600853870557, Y=-0.26132624795300813, Z=0.02590253971121584]\r\n   [junit4]   1> Computing new x bound for plane [A=0.6890973226271416, B=-0.6795484036912525; C=-0.2517118332315264; D=0.0]\r\n   [junit4]   1>  x-bound point1: [X=-0.7253404115923568, Y=-0.6473134187879598, Z=-0.2381665352265543]\r\n   [junit4]   1>  x-bound point2: [X=0.7253404115923568, Y=0.6473134187879598, Z=0.2381665352265543]\r\n   [junit4]   1> Computing new x bound for plane [A=0.0, B=-0.6626477256017624; C=-0.7489312329945998; D=0.0]\r\n   [junit4]   1>  x-bound point1: [X=-1.0011188539924791, Y=-0.0, Z=-0.0]\r\n   [junit4]   1>  x-bound point2: [X=1.0011188539924791, Y=0.0, Z=0.0]\r\n   [junit4]   1> Computing new x bound for plane [A=0.0, B=-1.0; C=2.5073042927637435E-16; D=0.0]\r\n   [junit4]   1>  x-bound point1: [X=-1.0011188539924791, Y=-0.0, Z=0.0]\r\n   [junit4]   1>  x-bound point2: [X=1.0011188539924791, Y=0.0, Z=-0.0]\r\n   [junit4]   1> Computing new x bound for plane [A=-0.12218735010855987, B=-0.9604628616740691; C=-0.25016263273779726; D=0.0]\r\n   [junit4]   1>  x-bound point1: [X=-0.9936143682718389, Y=0.11842468105083435, Z=0.030638463267361405]\r\n   [junit4]   1>  x-bound point2: [X=0.9936143682718389, Y=-0.11842468105083435, Z=-0.030638463267361405]\r\n   [junit4]   1> Computing new x bound for plane [A=-0.2623138822938212, B=-0.9602137546257182; C=0.09581739186350438; D=0.0]\r\n   [junit4]   1>  x-bound point1: [X=-0.9660600853870557, Y=0.26132624795300813, Z=-0.02590253971121584]\r\n   [junit4]   1>  x-bound point2: [X=0.9660600853870557, Y=-0.26132624795300813, Z=0.02590253971121584]\r\n   [junit4]   1> Computing new x bound for plane [A=0.6890973226271416, B=-0.6795484036912525; C=-0.2517118332315264; D=0.0]\r\n   [junit4]   1>  x-bound point1: [X=-0.7253404115923568, Y=-0.6473134187879598, Z=-0.2381665352265543]\r\n   [junit4]   1>  x-bound point2: [X=0.7253404115923568, Y=0.6473134187879598, Z=0.2381665352265543]\r\n   [junit4]   1> Computing new x bound for plane [A=0.0, B=-0.6626477256017624; C=-0.7489312329945998; D=0.0]\r\n   [junit4]   1>  x-bound point1: [X=-1.0011188539924791, Y=-0.0, Z=-0.0]\r\n   [junit4]   1>  x-bound point2: [X=1.0011188539924791, Y=0.0, Z=0.0]\r\n   [junit4]   1> Computing new x bound for plane [A=0.0, B=-1.0; C=2.5073042927637435E-16; D=0.0]\r\n   [junit4]   1>  x-bound point1: [X=-1.0011188539924791, Y=-0.0, Z=0.0]\r\n   [junit4]   1>  x-bound point2: [X=1.0011188539924791, Y=0.0, Z=-0.0]\r\n   [junit4]   1> Computing new x bound for plane [A=-0.12218735010855987, B=-0.9604628616740691; C=-0.25016263273779726; D=0.0]\r\n   [junit4]   1>  x-bound point1: [X=-0.9936143682718389, Y=0.11842468105083435, Z=0.030638463267361405]\r\n   [junit4]   1>  x-bound point2: [X=0.9936143682718389, Y=-0.11842468105083435, Z=-0.030638463267361405]\r\n   [junit4]   1> Computing new x bound for plane [A=-0.2623138822938212, B=-0.9602137546257182; C=0.09581739186350438; D=0.0]\r\n   [junit4]   1>  x-bound point1: [X=-0.9660600853870557, Y=0.26132624795300813, Z=-0.02590253971121584]\r\n   [junit4]   1>  x-bound point2: [X=0.9660600853870557, Y=-0.26132624795300813, Z=0.02590253971121584]\r\n{code}\r\n\r\nThere are a number of points which would extend the bounds sufficiently, but they seemingly are discarded because they're outside of the membership of the plane intersection.  The one we accept is this one:\r\n\r\n{code}\r\n[junit4]   1> Computing new x bound for plane [A=-0.12218735010855987, B=-0.9604628616740691; C=-0.25016263273779726; D=0.0]\r\n[junit4]   1>  x-bound point1: [X=-0.9936143682718389, Y=0.11842468105083435, Z=0.030638463267361405]\r\n[junit4]   1>  x-bound point2: [X=0.9936143682718389, Y=-0.11842468105083435, Z=-0.030638463267361405]\r\n{code}\r\n\r\nBut we apparently reject this one (and shouldn't):\r\n\r\n{code}\r\n[junit4]   1> Computing new x bound for plane [A=-0.2623138822938212, B=-0.9602137546257182; C=0.09581739186350438; D=0.0]\r\n[junit4]   1>  x-bound point1: [X=-0.9660600853870557, Y=0.26132624795300813, Z=-0.02590253971121584]\r\n[junit4]   1>  x-bound point2: [X=0.9660600853870557, Y=-0.26132624795300813, Z=0.02590253971121584]\r\n{code}\r\n",
+          "updateAuthor": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=kwright%40metacarta.com",
+            "name": "kwright@metacarta.com",
+            "key": "kwright@metacarta.com",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=kwright%40metacarta.com&avatarId=10392",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=kwright%40metacarta.com&avatarId=10392"
+            },
+            "displayName": "Karl Wright",
+            "active": true,
+            "timeZone": "America/New_York"
+          },
+          "created": "2018-03-28T12:18:00.172+0000",
+          "updated": "2018-03-28T12:18:00.172+0000"
+        },
+        {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/13148235/comment/16417268",
+          "id": "16417268",
+          "author": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=kwright%40metacarta.com",
+            "name": "kwright@metacarta.com",
+            "key": "kwright@metacarta.com",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=kwright%40metacarta.com&avatarId=10392",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=kwright%40metacarta.com&avatarId=10392"
+            },
+            "displayName": "Karl Wright",
+            "active": true,
+            "timeZone": "America/New_York"
+          },
+          "body": "Here's the plane that is rejecting the bounds point:\r\n\r\n{code}\r\n[junit4]   1>  x-bound point1: [X=-0.9660600853870557, Y=0.26132624795300813, Z=-0.02590253971121584]\r\n[junit4]   1>   in addPoint() for [X=-0.9660600853870557, Y=0.26132624795300813, Z=-0.02590253971121584]\r\n[junit4]   1>   rejected due to [A=0.3322732772082172, B=-0.18309880331194991, C=-0.9252401296307047, D=0.0, side=1.0]\r\n{code}\r\n\r\nI'm now wondering if the problem is that the polygon is very close to being greater than 180 degrees, and the min X point is outside of the bounds for that reason, but the endpoints of the segment are not.  If that's the case, we would need to only use the adjoining edge bounds rather than all polygon bounds when computing the bounds.\r\n",
+          "updateAuthor": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=kwright%40metacarta.com",
+            "name": "kwright@metacarta.com",
+            "key": "kwright@metacarta.com",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=kwright%40metacarta.com&avatarId=10392",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=kwright%40metacarta.com&avatarId=10392"
+            },
+            "displayName": "Karl Wright",
+            "active": true,
+            "timeZone": "America/New_York"
+          },
+          "created": "2018-03-28T12:29:30.514+0000",
+          "updated": "2018-03-28T14:35:53.524+0000"
+        },
+        {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/13148235/comment/16417546",
+          "id": "16417546",
+          "author": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=kwright%40metacarta.com",
+            "name": "kwright@metacarta.com",
+            "key": "kwright@metacarta.com",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=kwright%40metacarta.com&avatarId=10392",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=kwright%40metacarta.com&avatarId=10392"
+            },
+            "displayName": "Karl Wright",
+            "active": true,
+            "timeZone": "America/New_York"
+          },
+          "body": "The plane that rejects the right bound goes through point 3 of the polygon:\r\n\r\n{code}\r\n[junit4]   1> Rejection plane contains [lat=-0.375870856827283, lon=2.9129132647718414([X=-0.9065744420970767, Y=0.21100590938346708, Z=-0.36732668582405886])]\r\n{code}\r\n\r\nThe question is therefore whether the described arc segment is greater than 180 degrees.  If it is, then the plane's sidedness will be incorrect, and that would lead to this exact situation.  It would also lead to a polygon that is bogus, since edges cannot span more than 180 degrees and still work.  Let me see if I can figure out whether the shape is bogus, and if so, find a way to detect that when we build it.\r\n",
+          "updateAuthor": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=kwright%40metacarta.com",
+            "name": "kwright@metacarta.com",
+            "key": "kwright@metacarta.com",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=kwright%40metacarta.com&avatarId=10392",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=kwright%40metacarta.com&avatarId=10392"
+            },
+            "displayName": "Karl Wright",
+            "active": true,
+            "timeZone": "America/New_York"
+          },
+          "created": "2018-03-28T15:26:39.788+0000",
+          "updated": "2018-03-28T15:26:39.788+0000"
+        },
+        {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/13148235/comment/16417655",
+          "id": "16417655",
+          "author": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=kwright%40metacarta.com",
+            "name": "kwright@metacarta.com",
+            "key": "kwright@metacarta.com",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=kwright%40metacarta.com&avatarId=10392",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=kwright%40metacarta.com&avatarId=10392"
+            },
+            "displayName": "Karl Wright",
+            "active": true,
+            "timeZone": "America/New_York"
+          },
+          "body": "Some quick sanity checking did not show anything pathological with the polygon.  But the only check I did was making sure that all poly points came back as \"within\" the polygon.  I still wonder if it is possible for any one edge to exceed 180 and yet have that check pass.  The edge endpoint planes are not the same as what is used for \"within\" checks; they're meant to be used only for a specific segment, and they use the other end of the segment to determine sidedness.  I did confirm that the bounds point I was looking at was considered \"outside\" both the standard and the large polygons, though.\r\n\r\nI need to eyeball it further and figure out which edge should be contributing the most negative X value.\r\n",
+          "updateAuthor": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=kwright%40metacarta.com",
+            "name": "kwright@metacarta.com",
+            "key": "kwright@metacarta.com",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=kwright%40metacarta.com&avatarId=10392",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=kwright%40metacarta.com&avatarId=10392"
+            },
+            "displayName": "Karl Wright",
+            "active": true,
+            "timeZone": "America/New_York"
+          },
+          "created": "2018-03-28T16:10:24.070+0000",
+          "updated": "2018-03-28T16:10:24.070+0000"
+        },
+        {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/13148235/comment/16417803",
+          "id": "16417803",
+          "author": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=kwright%40metacarta.com",
+            "name": "kwright@metacarta.com",
+            "key": "kwright@metacarta.com",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=kwright%40metacarta.com&avatarId=10392",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=kwright%40metacarta.com&avatarId=10392"
+            },
+            "displayName": "Karl Wright",
+            "active": true,
+            "timeZone": "America/New_York"
+          },
+          "body": "Something is odd with the rejection plane.\r\n\r\nThe code definitely uses adjoining edges to delimit polygon edges, so each delimiting plane should go through two points and the origin.  But:\r\n\r\n{code}\r\n[junit4]   1> Rejection plane distance to point 0= 0.5740492391748969\r\n[junit4]   1> Rejection plane distance to point 1= 0.33264504249101573\r\n[junit4]   1> Rejection plane distance to point 2= -0.7049619375342049\r\n[junit4]   1> Rejection plane distance to point 3= -5.551115123125783E-17\r\n[junit4]   1> Rejection plane distance to point 4= 0.7536785854436437\r\n{code}\r\n\r\nThe rejection edge goes through only one point and is nowhere near any of the others.  It does go through the origin, but unless it was specifically constructed to be perpendicular to original edge, this makes no sense.\r\n\r\n",
+          "updateAuthor": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=kwright%40metacarta.com",
+            "name": "kwright@metacarta.com",
+            "key": "kwright@metacarta.com",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=kwright%40metacarta.com&avatarId=10392",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=kwright%40metacarta.com&avatarId=10392"
+            },
+            "displayName": "Karl Wright",
+            "active": true,
+            "timeZone": "America/New_York"
+          },
+          "created": "2018-03-28T17:30:23.508+0000",
+          "updated": "2018-03-28T17:30:23.508+0000"
+        },
+        {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/13148235/comment/16417823",
+          "id": "16417823",
+          "author": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=kwright%40metacarta.com",
+            "name": "kwright@metacarta.com",
+            "key": "kwright@metacarta.com",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=kwright%40metacarta.com&avatarId=10392",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=kwright%40metacarta.com&avatarId=10392"
+            },
+            "displayName": "Karl Wright",
+            "active": true,
+            "timeZone": "America/New_York"
+          },
+          "body": "Turns out that a standard polygon cannot be tiled with these points, and a complex polygon is getting built instead:\r\n\r\n{code}\r\n   [junit4]   1> Standard polygon: GeoComplexPolygon: {planetmodel=PlanetModel.WGS84, number of shapes=1, address=99c3330b, testPoint=[X=0.3804488906595847, Y=-0.47772089071622287, Z=0.7906122375677148], testPointInSet=true, shapes={ {[lat=-1.2205765069413237, lon=3.141592653589793([X=-0.3424714964202101, Y=4.194066\r\n218902145E-17, Z=-0.9375649457139603])], [lat=-0.63542308910253, lon=0.9853722928232957([X=0.4446759777403525, Y=0.6707549854468698, Z=-0.5934780737681111])], [lat=0.0, lon=0.0([X=1.0011188539924791, Y=0.0, Z=0.0])], [lat=0.45435018176633574, lon=3.141592653589793([X=-0.8989684544372841, Y=1.1009188402610632E-16, Z=\r\n0.4390846549572752])], [lat=-0.375870856827283, lon=2.9129132647718414([X=-0.9065744420970767, Y=0.21100590938346708, Z=-0.36732668582405886])]}}\r\n{code}\r\n\r\nThat is meaningful because (a) we have no assurances that the polygon is legal, and (b) all the comparisons we were doing in the test between standard and large are not useful.  Furthermore, the edge cutoffs for complex polygons are definitely computed differently than they are for standard polygons.  But it's pretty concerning that a standard poly cannot be built at all.\r\n",
+          "updateAuthor": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=kwright%40metacarta.com",
+            "name": "kwright@metacarta.com",
+            "key": "kwright@metacarta.com",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=kwright%40metacarta.com&avatarId=10392",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=kwright%40metacarta.com&avatarId=10392"
+            },
+            "displayName": "Karl Wright",
+            "active": true,
+            "timeZone": "America/New_York"
+          },
+          "created": "2018-03-28T17:47:37.442+0000",
+          "updated": "2018-03-28T17:47:37.442+0000"
+        },
+        {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/13148235/comment/16418092",
+          "id": "16418092",
+          "author": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=kwright%40metacarta.com",
+            "name": "kwright@metacarta.com",
+            "key": "kwright@metacarta.com",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=kwright%40metacarta.com&avatarId=10392",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=kwright%40metacarta.com&avatarId=10392"
+            },
+            "displayName": "Karl Wright",
+            "active": true,
+            "timeZone": "America/New_York"
+          },
+          "body": "So, the following is true:\r\n\r\n(1) All polygon points are in the hemisphere y>=0\r\n(2) The bounds point we think is right is on the edge plane, precision 1.0e-17\r\n(3) The bounds point we think is right is in the hemisphere y>=0\r\n(4) But, the membership sided plane that rejects the bounds point we think is right accepts the antipodes point, which is in the y < 0 part of the world\r\n(5) All edges are properly constructed so that each endpoint is within the other endpoint's membership sided plane\r\n\r\nThe conclusion is that the sector of the edge plane that is not contributing properly towards the bounds is at least partly in the y<0 space.  But since the two endpoints are both in the y>=0 space, this makes no sense, because any arc that connects the two would have to remain in the y>=0 space as well.\r\n\r\nAdding the following code to the GeoComplexPolygon constructor demonstrates that nothing odd is happening with edge construction:\r\n\r\n{code}\r\n      if (startPoint.y < 0.0 || endPoint.y < 0.0) {\r\n        System.out.println(\"Found start/end in y < 0 space\");\r\n        throw new IllegalStateException(\"blah\");\r\n      }\r\n{code}\r\n\r\nNo exception is thrown, so there are no unexpected points being included somehow.  So the min x point is being excluded because it really is in the wrong sector.  The membership bounds sided planes divide the space into four sections, and only one is legal; the excluded bounds point therefore cannot be on the right part of the sector in question.  So we're looking in the wrong place; this polygon edge cannot contribute to the min/max.\r\n",
+          "updateAuthor": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=kwright%40metacarta.com",
+            "name": "kwright@metacarta.com",
+            "key": "kwright@metacarta.com",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=kwright%40metacarta.com&avatarId=10392",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=kwright%40metacarta.com&avatarId=10392"
+            },
+            "displayName": "Karl Wright",
+            "active": true,
+            "timeZone": "America/New_York"
+          },
+          "created": "2018-03-28T20:57:54.432+0000",
+          "updated": "2018-03-28T21:15:09.161+0000"
+        },
+        {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/13148235/comment/16418163",
+          "id": "16418163",
+          "author": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=kwright%40metacarta.com",
+            "name": "kwright@metacarta.com",
+            "key": "kwright@metacarta.com",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=kwright%40metacarta.com&avatarId=10392",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=kwright%40metacarta.com&avatarId=10392"
+            },
+            "displayName": "Karl Wright",
+            "active": true,
+            "timeZone": "America/New_York"
+          },
+          "body": "If the bounds look good, then we're left with a point that GeoComplexPolygon thinks is in set that actually isn't.\r\n",
+          "updateAuthor": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=kwright%40metacarta.com",
+            "name": "kwright@metacarta.com",
+            "key": "kwright@metacarta.com",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=kwright%40metacarta.com&avatarId=10392",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=kwright%40metacarta.com&avatarId=10392"
+            },
+            "displayName": "Karl Wright",
+            "active": true,
+            "timeZone": "America/New_York"
+          },
+          "created": "2018-03-28T21:37:15.794+0000",
+          "updated": "2018-03-28T21:37:15.794+0000"
+        },
+        {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/13148235/comment/16418297",
+          "id": "16418297",
+          "author": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=kwright%40metacarta.com",
+            "name": "kwright@metacarta.com",
+            "key": "kwright@metacarta.com",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=kwright%40metacarta.com&avatarId=10392",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=kwright%40metacarta.com&avatarId=10392"
+            },
+            "displayName": "Karl Wright",
+            "active": true,
+            "timeZone": "America/New_York"
+          },
+          "body": "The test point is in y < 0 territory, and is considered in-set.  So all of y < 0 must be in-set.  You can apparently get from the test point to the point we're evaluating without crossing anything.  But x == -1.001 is thought to be NOT in set; I don't understand this.  That is intuitively weird and needs to be verified.\r\n\r\n",
+          "updateAuthor": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=kwright%40metacarta.com",
+            "name": "kwright@metacarta.com",
+            "key": "kwright@metacarta.com",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=kwright%40metacarta.com&avatarId=10392",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=kwright%40metacarta.com&avatarId=10392"
+            },
+            "displayName": "Karl Wright",
+            "active": true,
+            "timeZone": "America/New_York"
+          },
+          "created": "2018-03-29T01:02:52.398+0000",
+          "updated": "2018-03-29T01:02:52.398+0000"
+        },
+        {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/13148235/comment/16418521",
+          "id": "16418521",
+          "author": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=kwright%40metacarta.com",
+            "name": "kwright@metacarta.com",
+            "key": "kwright@metacarta.com",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=kwright%40metacarta.com&avatarId=10392",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=kwright%40metacarta.com&avatarId=10392"
+            },
+            "displayName": "Karl Wright",
+            "active": true,
+            "timeZone": "America/New_York"
+          },
+          "body": "What happens is finally clear.\r\nOne of the travel planes in the -x pole case goes directly along an edge.  The edge's endpoint is actually within the \"envelope\", and another edge crosses out.  But this case isn't handled correctly for some reason.\r\n\r\nThe logic for complex cases like this needs to be reviewed.  Essentially there are four surfaces: inside the travel corridor, outside the travel corridor, and either end of the travel corridor.  We need to make sure the following cases are properly handled:\r\n\r\n* polygon points within the corridor\r\n* edges crossing corridor ends\r\n* polygon points on the corridor boundaries\r\n\r\nWhile we have logic to identify all edges that intersect at all with a travel corridor, the logic dealing with the cases mentioned is complex and may have issues.  Needs careful thought.\r\n",
+          "updateAuthor": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=kwright%40metacarta.com",
+            "name": "kwright@metacarta.com",
+            "key": "kwright@metacarta.com",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=kwright%40metacarta.com&avatarId=10392",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=kwright%40metacarta.com&avatarId=10392"
+            },
+            "displayName": "Karl Wright",
+            "active": true,
+            "timeZone": "America/New_York"
+          },
+          "created": "2018-03-29T07:00:25.628+0000",
+          "updated": "2018-03-29T07:00:25.628+0000"
+        },
+        {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/13148235/comment/16418539",
+          "id": "16418539",
+          "author": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=jpountz",
+            "name": "jpountz",
+            "key": "jpountz",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=jpountz&avatarId=16520",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=jpountz&avatarId=16520",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=jpountz&avatarId=16520",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=jpountz&avatarId=16520"
+            },
+            "displayName": "Adrien Grand",
+            "active": true,
+            "timeZone": "Europe/Paris"
+          },
+          "body": "[~kwright@metacarta.com] should we add the AwaitsFix annotation so that this test doesn't contribute to the noise until it is fixed?",
+          "updateAuthor": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=jpountz",
+            "name": "jpountz",
+            "key": "jpountz",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=jpountz&avatarId=16520",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=jpountz&avatarId=16520",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=jpountz&avatarId=16520",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=jpountz&avatarId=16520"
+            },
+            "displayName": "Adrien Grand",
+            "active": true,
+            "timeZone": "Europe/Paris"
+          },
+          "created": "2018-03-29T07:27:48.715+0000",
+          "updated": "2018-03-29T07:27:48.715+0000"
+        },
+        {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/13148235/comment/16418553",
+          "id": "16418553",
+          "author": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=kwright%40metacarta.com",
+            "name": "kwright@metacarta.com",
+            "key": "kwright@metacarta.com",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=kwright%40metacarta.com&avatarId=10392",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=kwright%40metacarta.com&avatarId=10392"
+            },
+            "displayName": "Karl Wright",
+            "active": true,
+            "timeZone": "America/New_York"
+          },
+          "body": "[~jpountz], how much noise is it generating?  The main failure source of noise generation was already corrected, I believe, in the commit already made as part of this ticket.\r\n\r\nIt's a rare case, and it only is possible at all when a standard polygon cannot be tiled for some reason, which was what changed recently.\r\n\r\nI won't have a fix for probably something like 48 hours; if we see another failure in that time frame I will be happy to change the test annotation.  Prior to that, the last known failure of this code was in January 2017, which I didn't even know about until Tuesday.\r\n",
+          "updateAuthor": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=kwright%40metacarta.com",
+            "name": "kwright@metacarta.com",
+            "key": "kwright@metacarta.com",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=kwright%40metacarta.com&avatarId=10392",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=kwright%40metacarta.com&avatarId=10392"
+            },
+            "displayName": "Karl Wright",
+            "active": true,
+            "timeZone": "America/New_York"
+          },
+          "created": "2018-03-29T07:44:09.183+0000",
+          "updated": "2018-03-29T07:44:09.183+0000"
+        },
+        {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/13148235/comment/16418577",
+          "id": "16418577",
+          "author": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=jpountz",
+            "name": "jpountz",
+            "key": "jpountz",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=jpountz&avatarId=16520",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=jpountz&avatarId=16520",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=jpountz&avatarId=16520",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=jpountz&avatarId=16520"
+            },
+            "displayName": "Adrien Grand",
+            "active": true,
+            "timeZone": "Europe/Paris"
+          },
+          "body": "We had this one last night on the Elastic CI, which I assumed was related to the issues discussed here: https://elasticsearch-ci.elastic.co/job/apache+lucene-solr+master/25957/console",
+          "updateAuthor": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=jpountz",
+            "name": "jpountz",
+            "key": "jpountz",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=jpountz&avatarId=16520",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=jpountz&avatarId=16520",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=jpountz&avatarId=16520",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=jpountz&avatarId=16520"
+            },
+            "displayName": "Adrien Grand",
+            "active": true,
+            "timeZone": "Europe/Paris"
+          },
+          "created": "2018-03-29T08:06:53.936+0000",
+          "updated": "2018-03-29T08:06:53.936+0000"
+        },
+        {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/13148235/comment/16418945",
+          "id": "16418945",
+          "author": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=kwright%40metacarta.com",
+            "name": "kwright@metacarta.com",
+            "key": "kwright@metacarta.com",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=kwright%40metacarta.com&avatarId=10392",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=kwright%40metacarta.com&avatarId=10392"
+            },
+            "displayName": "Karl Wright",
+            "active": true,
+            "timeZone": "America/New_York"
+          },
+          "body": "Every single Geo3D test that works with random polygons can potentially fail in this way.  The spatial package has some of these too; I am not even able to list all the tests potentially affected.\r\n\r\nMeanwhile, I know what the fix is and just need the time to code it.\r\n\r\nWhat would you like me to do?\r\n",
+          "updateAuthor": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=kwright%40metacarta.com",
+            "name": "kwright@metacarta.com",
+            "key": "kwright@metacarta.com",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=kwright%40metacarta.com&avatarId=10392",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=kwright%40metacarta.com&avatarId=10392"
+            },
+            "displayName": "Karl Wright",
+            "active": true,
+            "timeZone": "America/New_York"
+          },
+          "created": "2018-03-29T12:55:42.542+0000",
+          "updated": "2018-03-29T12:55:42.542+0000"
+        },
+        {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/13148235/comment/16418947",
+          "id": "16418947",
+          "author": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=jpountz",
+            "name": "jpountz",
+            "key": "jpountz",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=jpountz&avatarId=16520",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=jpountz&avatarId=16520",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=jpountz&avatarId=16520",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=jpountz&avatarId=16520"
+            },
+            "displayName": "Adrien Grand",
+            "active": true,
+            "timeZone": "Europe/Paris"
+          },
+          "body": "What we usually do in such cases that we do not need more information from CI is that we add the {{@AwaitsFix}} annotation to the test. Then once the fix is merged, it can be removed. This annotation will make {{ant test}} skip this test.",
+          "updateAuthor": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=jpountz",
+            "name": "jpountz",
+            "key": "jpountz",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=jpountz&avatarId=16520",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=jpountz&avatarId=16520",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=jpountz&avatarId=16520",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=jpountz&avatarId=16520"
+            },
+            "displayName": "Adrien Grand",
+            "active": true,
+            "timeZone": "Europe/Paris"
+          },
+          "created": "2018-03-29T12:58:53.440+0000",
+          "updated": "2018-03-29T12:58:53.440+0000"
+        },
+        {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/13148235/comment/16418992",
+          "id": "16418992",
+          "author": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=kwright%40metacarta.com",
+            "name": "kwright@metacarta.com",
+            "key": "kwright@metacarta.com",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=kwright%40metacarta.com&avatarId=10392",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=kwright%40metacarta.com&avatarId=10392"
+            },
+            "displayName": "Karl Wright",
+            "active": true,
+            "timeZone": "America/New_York"
+          },
+          "body": "Ok, I've abandoned my work.  This will set back the fix for some days.  I've started annotating all the random tests that involve polygons; I should have that done in an hour or so.\r\n\r\nI have never had to do this before when working on Lucene.\r\n\r\nCurrently, that code gets errors, so please advise the proper way to use the annotation.\r\n\r\n{code}\r\n    [javac] Compiling 2 source files to C:\\wipgit\\lucene4\\lucene-solr\\lucene\\build\\spatial3d\\classes\\test\r\n    [javac] C:\\wipgit\\lucene4\\lucene-solr\\lucene\\spatial3d\\src\\test\\org\\apache\\lucene\\spatial3d\\TestGeo3DPoint.java:191: error: cannot find symbol\r\n    [javac]   @AwaitsFix(\"https://issues.apache.org/jira/browse/LUCENE-8227\")\r\n    [javac]              ^\r\n    [javac]   symbol:   method value()\r\n    [javac]   location: @interface AwaitsFix\r\n    [javac] C:\\wipgit\\lucene4\\lucene-solr\\lucene\\spatial3d\\src\\test\\org\\apache\\lucene\\spatial3d\\TestGeo3DPoint.java:471: error: cannot find symbol\r\n    [javac]   @AwaitsFix(\"https://issues.apache.org/jira/browse/LUCENE-8227\")\r\n    [javac]              ^\r\n    [javac]   symbol:   method value()\r\n    [javac]   location: @interface AwaitsFix\r\n    [javac] C:\\wipgit\\lucene4\\lucene-solr\\lucene\\spatial3d\\src\\test\\org\\apache\\lucene\\spatial3d\\TestGeo3DPoint.java:477: error: cannot find symbol\r\n    [javac]   @AwaitsFix(\"https://issues.apache.org/jira/browse/LUCENE-8227\")\r\n    [javac]              ^\r\n    [javac]   symbol:   method value()\r\n    [javac]   location: @interface AwaitsFix\r\n    [javac] C:\\wipgit\\lucene4\\lucene-solr\\lucene\\spatial3d\\src\\test\\org\\apache\\lucene\\spatial3d\\TestGeo3DPoint.java:483: error: cannot find symbol\r\n    [javac]   @AwaitsFix(\"https://issues.apache.org/jira/browse/LUCENE-8227\")\r\n    [javac]              ^\r\n    [javac]   symbol:   method value()\r\n    [javac]   location: @interface AwaitsFix\r\n    [javac] C:\\wipgit\\lucene4\\lucene-solr\\lucene\\spatial3d\\src\\test\\org\\apache\\lucene\\spatial3d\\TestGeo3DPoint.java:191: error: annotation @AwaitsFix is missing a default value for the element 'bugUrl'\r\n    [javac]   @AwaitsFix(\"https://issues.apache.org/jira/browse/LUCENE-8227\")\r\n    [javac]   ^\r\n    [javac] C:\\wipgit\\lucene4\\lucene-solr\\lucene\\spatial3d\\src\\test\\org\\apache\\lucene\\spatial3d\\TestGeo3DPoint.java:471: error: annotation @AwaitsFix is missing a default value for the element 'bugUrl'\r\n    [javac]   @AwaitsFix(\"https://issues.apache.org/jira/browse/LUCENE-8227\")\r\n    [javac]   ^\r\n    [javac] C:\\wipgit\\lucene4\\lucene-solr\\lucene\\spatial3d\\src\\test\\org\\apache\\lucene\\spatial3d\\TestGeo3DPoint.java:477: error: annotation @AwaitsFix is missing a default value for the element 'bugUrl'\r\n    [javac]   @AwaitsFix(\"https://issues.apache.org/jira/browse/LUCENE-8227\")\r\n    [javac]   ^\r\n    [javac] C:\\wipgit\\lucene4\\lucene-solr\\lucene\\spatial3d\\src\\test\\org\\apache\\lucene\\spatial3d\\TestGeo3DPoint.java:483: error: annotation @AwaitsFix is missing a default value for the element 'bugUrl'\r\n    [javac]   @AwaitsFix(\"https://issues.apache.org/jira/browse/LUCENE-8227\")\r\n    [javac]   ^\r\n    [javac] Note: C:\\wipgit\\lucene4\\lucene-solr\\lucene\\spatial3d\\src\\test\\org\\apache\\lucene\\spatial3d\\TestGeo3DPoint.java uses or overrides a deprecated API.\r\n    [javac] Note: Recompile with -Xlint:deprecation for details.\r\n    [javac] 8 errors\r\n{code}\r\n",
+          "updateAuthor": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=kwright%40metacarta.com",
+            "name": "kwright@metacarta.com",
+            "key": "kwright@metacarta.com",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=kwright%40metacarta.com&avatarId=10392",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=kwright%40metacarta.com&avatarId=10392"
+            },
+            "displayName": "Karl Wright",
+            "active": true,
+            "timeZone": "America/New_York"
+          },
+          "created": "2018-03-29T13:34:36.727+0000",
+          "updated": "2018-03-29T13:34:36.727+0000"
+        },
+        {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/13148235/comment/16419096",
+          "id": "16419096",
+          "author": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=jira-bot",
+            "name": "jira-bot",
+            "key": "jira-bot",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+            },
+            "displayName": "ASF subversion and git services",
+            "active": true,
+            "timeZone": "Etc/UTC"
+          },
+          "body": "Commit 5b429df56f36031c8423803d5157029c59bcbb3d in lucene-solr's branch refs/heads/master from [~kwright@metacarta.com]\n[ https://git-wip-us.apache.org/repos/asf?p=lucene-solr.git;h=5b429df ]\n\nLUCENE-8227: Under pressure, had to @Ignore tests that caused intermittent failures.  This means no further work on Geo3D until these tests can be re-enabled.\n",
+          "updateAuthor": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=jira-bot",
+            "name": "jira-bot",
+            "key": "jira-bot",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+            },
+            "displayName": "ASF subversion and git services",
+            "active": true,
+            "timeZone": "Etc/UTC"
+          },
+          "created": "2018-03-29T14:37:55.206+0000",
+          "updated": "2018-03-29T14:37:55.206+0000"
+        },
+        {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/13148235/comment/16419098",
+          "id": "16419098",
+          "author": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=jira-bot",
+            "name": "jira-bot",
+            "key": "jira-bot",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+            },
+            "displayName": "ASF subversion and git services",
+            "active": true,
+            "timeZone": "Etc/UTC"
+          },
+          "body": "Commit 8dbb65b0d762792d5cde2fdf5073e67c7fce6dbe in lucene-solr's branch refs/heads/branch_7x from [~kwright@metacarta.com]\n[ https://git-wip-us.apache.org/repos/asf?p=lucene-solr.git;h=8dbb65b ]\n\nLUCENE-8227: Under pressure, had to @Ignore tests that caused intermittent failures.  This means no further work on Geo3D until these tests can be re-enabled.\n",
+          "updateAuthor": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=jira-bot",
+            "name": "jira-bot",
+            "key": "jira-bot",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+            },
+            "displayName": "ASF subversion and git services",
+            "active": true,
+            "timeZone": "Etc/UTC"
+          },
+          "created": "2018-03-29T14:39:04.917+0000",
+          "updated": "2018-03-29T14:39:04.917+0000"
+        },
+        {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/13148235/comment/16419100",
+          "id": "16419100",
+          "author": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=jira-bot",
+            "name": "jira-bot",
+            "key": "jira-bot",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+            },
+            "displayName": "ASF subversion and git services",
+            "active": true,
+            "timeZone": "Etc/UTC"
+          },
+          "body": "Commit 5f2c7cbeb16f9c264f888e1a3118056140f8e97f in lucene-solr's branch refs/heads/branch_6x from [~kwright@metacarta.com]\n[ https://git-wip-us.apache.org/repos/asf?p=lucene-solr.git;h=5f2c7cb ]\n\nLUCENE-8227: Under pressure, had to @Ignore tests that caused intermittent failures.  This means no further work on Geo3D until these tests can be re-enabled.\n",
+          "updateAuthor": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=jira-bot",
+            "name": "jira-bot",
+            "key": "jira-bot",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+            },
+            "displayName": "ASF subversion and git services",
+            "active": true,
+            "timeZone": "Etc/UTC"
+          },
+          "created": "2018-03-29T14:39:32.294+0000",
+          "updated": "2018-03-29T14:39:32.294+0000"
+        },
+        {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/13148235/comment/16419110",
+          "id": "16419110",
+          "author": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=kwright%40metacarta.com",
+            "name": "kwright@metacarta.com",
+            "key": "kwright@metacarta.com",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=kwright%40metacarta.com&avatarId=10392",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=kwright%40metacarta.com&avatarId=10392"
+            },
+            "displayName": "Karl Wright",
+            "active": true,
+            "timeZone": "America/New_York"
+          },
+          "body": "I was forced to use Ignore annotation instead, since I couldn't figure out what was wrong with AwaitsFix.\r\n\r\nAll random tests in that suite have been disabled.  There are likely other random tests that still fail elsewhere that have not been reported.  I will wait for a time (several days) before attempting to fix anything so that other tests that arise can be Ignored too.  As I said before, this will substantially delay a fix since it prevents me from actually coding it.\r\n\r\nIn the meantime, please note that Geo3D polygons are, effectively, unreliable.  Hopefully we will not be releasing code based on this code base until the repair is complete.\r\n\r\nAlso note that this problem has been around for more than a year.  The main difference has been that GeoComplexPolygons are used more extensively in the random suites now, in cases where standard polygons cannot be tiled.  That means they are instantiated for some really horrific cases, so it's not surprising these have problems in those conditions.\r\n\r\n",
+          "updateAuthor": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=kwright%40metacarta.com",
+            "name": "kwright@metacarta.com",
+            "key": "kwright@metacarta.com",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=kwright%40metacarta.com&avatarId=10392",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=kwright%40metacarta.com&avatarId=10392",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=kwright%40metacarta.com&avatarId=10392"
+            },
+            "displayName": "Karl Wright",
+            "active": true,
+            "timeZone": "America/New_York"
+          },
+          "created": "2018-03-29T14:45:51.791+0000",
+          "updated": "2018-03-29T14:45:51.791+0000"
+        },
+        {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/13148235/comment/16419419",
+          "id": "16419419",
+          "author": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=jpountz",
+            "name": "jpountz",
+            "key": "jpountz",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=jpountz&avatarId=16520",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=jpountz&avatarId=16520",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=jpountz&avatarId=16520",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=jpountz&avatarId=16520"
+            },
+            "displayName": "Adrien Grand",
+            "active": true,
+            "timeZone": "Europe/Paris"
+          },
+          "body": "bq. I was forced to use Ignore annotation instead, since I couldn't figure out what was wrong with AwaitsFix.\r\n\r\nI think this is because you need to do {{@AwaitsFix(bugUrl=\"http://foo\")}} rather than {{@AwaitsFix(\"http://foo\")}}.",
+          "updateAuthor": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=jpountz",
+            "name": "jpountz",
+            "key": "jpountz",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=jpountz&avatarId=16520",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=jpountz&avatarId=16520",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=jpountz&avatarId=16520",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=jpountz&avatarId=16520"
+            },
+            "displayName": "Adrien Grand",
+            "active": true,
+            "timeZone": "Europe/Paris"
+          },
+          "created": "2018-03-29T17:17:26.815+0000",
+          "updated": "2018-03-29T17:17:26.815+0000"
+        },
+        {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/13148235/comment/16420369",
+          "id": "16420369",
+          "author": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=jira-bot",
+            "name": "jira-bot",
+            "key": "jira-bot",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+            },
+            "displayName": "ASF subversion and git services",
+            "active": true,
+            "timeZone": "Etc/UTC"
+          },
+          "body": "Commit bc40f6c7e219c3def81e5d3bee6d5123cc4141e6 in lucene-solr's branch refs/heads/master from [~kwright@metacarta.com]\n[ https://git-wip-us.apache.org/repos/asf?p=lucene-solr.git;h=bc40f6c ]\n\nLUCENE-8227: Redevelop path iterator implementations to make them robust against edges on paths.\n",
+          "updateAuthor": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=jira-bot",
+            "name": "jira-bot",
+            "key": "jira-bot",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+            },
+            "displayName": "ASF subversion and git services",
+            "active": true,
+            "timeZone": "Etc/UTC"
+          },
+          "created": "2018-03-30T10:44:12.054+0000",
+          "updated": "2018-03-30T10:44:12.054+0000"
+        },
+        {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/13148235/comment/16420370",
+          "id": "16420370",
+          "author": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=jira-bot",
+            "name": "jira-bot",
+            "key": "jira-bot",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+            },
+            "displayName": "ASF subversion and git services",
+            "active": true,
+            "timeZone": "Etc/UTC"
+          },
+          "body": "Commit acfa2d0207497afca4c3a4152baf2540d5243344 in lucene-solr's branch refs/heads/branch_7x from [~kwright@metacarta.com]\n[ https://git-wip-us.apache.org/repos/asf?p=lucene-solr.git;h=acfa2d0 ]\n\nLUCENE-8227: Redevelop path iterator implementations to make them robust against edges on paths.\n",
+          "updateAuthor": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=jira-bot",
+            "name": "jira-bot",
+            "key": "jira-bot",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+            },
+            "displayName": "ASF subversion and git services",
+            "active": true,
+            "timeZone": "Etc/UTC"
+          },
+          "created": "2018-03-30T10:44:56.647+0000",
+          "updated": "2018-03-30T10:44:56.647+0000"
+        },
+        {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/13148235/comment/16420371",
+          "id": "16420371",
+          "author": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=jira-bot",
+            "name": "jira-bot",
+            "key": "jira-bot",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+            },
+            "displayName": "ASF subversion and git services",
+            "active": true,
+            "timeZone": "Etc/UTC"
+          },
+          "body": "Commit 007450f8a3806102479ff309e19c4dae539a4358 in lucene-solr's branch refs/heads/branch_6x from [~kwright@metacarta.com]\n[ https://git-wip-us.apache.org/repos/asf?p=lucene-solr.git;h=007450f ]\n\nLUCENE-8227: Redevelop path iterator implementations to make them robust against edges on paths.\n",
+          "updateAuthor": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=jira-bot",
+            "name": "jira-bot",
+            "key": "jira-bot",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+            },
+            "displayName": "ASF subversion and git services",
+            "active": true,
+            "timeZone": "Etc/UTC"
+          },
+          "created": "2018-03-30T10:45:27.205+0000",
+          "updated": "2018-03-30T10:45:27.205+0000"
+        },
+        {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/13148235/comment/16420400",
+          "id": "16420400",
+          "author": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=jira-bot",
+            "name": "jira-bot",
+            "key": "jira-bot",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+            },
+            "displayName": "ASF subversion and git services",
+            "active": true,
+            "timeZone": "Etc/UTC"
+          },
+          "body": "Commit b78d980097d41e48acbecbe305794103df119190 in lucene-solr's branch refs/heads/master from [~shalin]\n[ https://git-wip-us.apache.org/repos/asf?p=lucene-solr.git;h=b78d980 ]\n\nLUCENE-8227: Remove unused import to make precommit happy\n",
+          "updateAuthor": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=johna",
+            "name": "johna",
+            "key": "banjo",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=banjo&avatarId=38464",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=banjo&avatarId=38464",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=banjo&avatarId=38464",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=banjo&avatarId=38464"
+            },
+            "displayName": "John Andrunas",
+            "active": true,
+            "timeZone": "America/Los_Angeles"
+          },
+          "created": "2018-03-30T11:24:58.221+0000",
+          "updated": "2019-10-02T17:23:39.997+0000"
+        },
+        {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/13148235/comment/16420412",
+          "id": "16420412",
+          "author": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=jira-bot",
+            "name": "jira-bot",
+            "key": "jira-bot",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+            },
+            "displayName": "ASF subversion and git services",
+            "active": true,
+            "timeZone": "Etc/UTC"
+          },
+          "body": "Commit fb47c166b7976fe3e4c65150e348c5887f28319e in lucene-solr's branch refs/heads/branch_7x from [~shalin]\n[ https://git-wip-us.apache.org/repos/asf?p=lucene-solr.git;h=fb47c16 ]\n\nLUCENE-8227: Remove unused import to make precommit happy\n\n(cherry picked from commit b78d980)\n",
+          "updateAuthor": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=johna",
+            "name": "johna",
+            "key": "banjo",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=banjo&avatarId=38464",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=banjo&avatarId=38464",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=banjo&avatarId=38464",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=banjo&avatarId=38464"
+            },
+            "displayName": "John Andrunas",
+            "active": true,
+            "timeZone": "America/Los_Angeles"
+          },
+          "created": "2018-03-30T11:39:32.490+0000",
+          "updated": "2019-10-02T17:23:39.920+0000"
+        },
+        {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/13148235/comment/16420414",
+          "id": "16420414",
+          "author": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=jira-bot",
+            "name": "jira-bot",
+            "key": "jira-bot",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+            },
+            "displayName": "ASF subversion and git services",
+            "active": true,
+            "timeZone": "Etc/UTC"
+          },
+          "body": "Commit e01ff16cffd1b12bd54d3dbb127d065b688abf97 in lucene-solr's branch refs/heads/branch_6x from [~shalin]\n[ https://git-wip-us.apache.org/repos/asf?p=lucene-solr.git;h=e01ff16 ]\n\nLUCENE-8227: Remove unused import to make precommit happy\n\n(cherry picked from commit b78d980)\n\n(cherry picked from commit fb47c16)\n",
+          "updateAuthor": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=johna",
+            "name": "johna",
+            "key": "banjo",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=banjo&avatarId=38464",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=banjo&avatarId=38464",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=banjo&avatarId=38464",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=banjo&avatarId=38464"
+            },
+            "displayName": "John Andrunas",
+            "active": true,
+            "timeZone": "America/Los_Angeles"
+          },
+          "created": "2018-03-30T11:40:56.849+0000",
+          "updated": "2019-10-02T17:23:39.861+0000"
+        },
+        {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/13148235/comment/16420439",
+          "id": "16420439",
+          "author": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=jira-bot",
+            "name": "jira-bot",
+            "key": "jira-bot",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+            },
+            "displayName": "ASF subversion and git services",
+            "active": true,
+            "timeZone": "Etc/UTC"
+          },
+          "body": "Commit e06554ad408a60dc37eb77c0aeeff542e506f1a5 in lucene-solr's branch refs/heads/master from [~kwright@metacarta.com]\n[ https://git-wip-us.apache.org/repos/asf?p=lucene-solr.git;h=e06554a ]\n\nLUCENE-8227: Widen plane envelopes a small amount to allow for some imprecision when intersecting inner and outer edges.\n",
+          "updateAuthor": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=jira-bot",
+            "name": "jira-bot",
+            "key": "jira-bot",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+            },
+            "displayName": "ASF subversion and git services",
+            "active": true,
+            "timeZone": "Etc/UTC"
+          },
+          "created": "2018-03-30T12:37:19.014+0000",
+          "updated": "2018-03-30T12:37:19.014+0000"
+        },
+        {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/13148235/comment/16420440",
+          "id": "16420440",
+          "author": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=jira-bot",
+            "name": "jira-bot",
+            "key": "jira-bot",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+            },
+            "displayName": "ASF subversion and git services",
+            "active": true,
+            "timeZone": "Etc/UTC"
+          },
+          "body": "Commit f28b56210ad25bdb70e44487bc76e24027b5c145 in lucene-solr's branch refs/heads/branch_7x from [~kwright@metacarta.com]\n[ https://git-wip-us.apache.org/repos/asf?p=lucene-solr.git;h=f28b562 ]\n\nLUCENE-8227: Widen plane envelopes a small amount to allow for some imprecision when intersecting inner and outer edges.\n",
+          "updateAuthor": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=jira-bot",
+            "name": "jira-bot",
+            "key": "jira-bot",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+            },
+            "displayName": "ASF subversion and git services",
+            "active": true,
+            "timeZone": "Etc/UTC"
+          },
+          "created": "2018-03-30T12:38:22.412+0000",
+          "updated": "2018-03-30T12:38:22.412+0000"
+        },
+        {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/13148235/comment/16420443",
+          "id": "16420443",
+          "author": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=jira-bot",
+            "name": "jira-bot",
+            "key": "jira-bot",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+            },
+            "displayName": "ASF subversion and git services",
+            "active": true,
+            "timeZone": "Etc/UTC"
+          },
+          "body": "Commit d7bf82df51f52fdc5e662d518446ebc251e92e8c in lucene-solr's branch refs/heads/branch_6x from [~kwright@metacarta.com]\n[ https://git-wip-us.apache.org/repos/asf?p=lucene-solr.git;h=d7bf82d ]\n\nLUCENE-8227: Widen plane envelopes a small amount to allow for some imprecision when intersecting inner and outer edges.\n",
+          "updateAuthor": {
+            "self": "https://issues.apache.org/jira/rest/api/2/user?username=jira-bot",
+            "name": "jira-bot",
+            "key": "jira-bot",
+            "avatarUrls": {
+              "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+              "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+              "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+              "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+            },
+            "displayName": "ASF subversion and git services",
+            "active": true,
+            "timeZone": "Etc/UTC"
+          },
+          "created": "2018-03-30T12:41:29.633+0000",
+          "updated": "2018-03-30T12:41:29.633+0000"
+        }
+      ],
+      "maxResults": 41,
+      "total": 41,
+      "startAt": 0
+    },
+    "customfield_12311820": "0|i3ru0n:",
+    "customfield_12314139": null
+  }
+}
