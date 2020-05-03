@@ -19,6 +19,8 @@ class Jira_Attachment:
 	# self.__attachment_content = Jira_Attachment.__download_attachment_content(attachment_content_url)
 
 	def get_attachment_content(self):
+		if not self.is_attachment_text_file():
+			raise Exception("Attachment is not text file. Attachment type is {}".format(self.__attachment_mime_type))
 		attachment_url = self.__attachment_content_url
 		attachment_content = ""
 		with urllib.request.urlopen(attachment_url) as content:
