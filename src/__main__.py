@@ -7,6 +7,7 @@ jira = Jira(jira_url, "../data/lucene-closed-data-10.json")
 
 for issue in jira.issue_list:
 	print(issue.data.issue_key, issue.contributors_number)
+	print(issue.data.issue_key, issue.data.remote_links)
 
 print("jira url: ", jira_url)
 # print(jsonpickle.encode(jira))

@@ -1,4 +1,6 @@
+from src.common.urllib_utils import UrlLibUtil
 from src.jira.jira_issue_changelog import Jira_Issue_ChangeLog_History
+from src.jira.jira_issue_remotelink import JiraIssueRemoteLink
 from src.jira.jira_user import User
 from src.common.json_interface import Json_Jira_Issue_Interface
 from src.jira.jira_issue_comment import Jira_Issue_Comment
@@ -38,6 +40,8 @@ class Jira_Issue_Data:
 		self.__changelog = Json_Jira_Issue_Interface.init_array_from_json(json_data, Jira_Issue_ChangeLog_History,
 																		  "changelog",
 																		  "histories")
+		self.__remotelinks = Json_Jira_Issue_Interface.init_array_from_json(UrlLibUtil.download_and_parse_json(self.__issue_rest_api_link + "/remotelink"),
+																			JiraIssueRemoteLink)
 
 	@property
 	def changelog(self):
@@ -70,6 +74,10 @@ class Jira_Issue_Data:
 	@property
 	def issue_key(self):
 		return self.__issue_key
+
+	@property
+	def remote_links(self):
+		return self.__remotelinks
 
 	def __str__(self):
 		result = "Issue: (id: {}, link: {}, key: {}, priority: {}, assignee: {}, status: {}, creator: {}, reporter: {}, " \

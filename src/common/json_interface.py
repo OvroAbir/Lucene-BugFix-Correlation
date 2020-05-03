@@ -26,9 +26,9 @@ class Json_Jira_Issue_Interface:
 			if key_levels[level] not in level_json_obj:
 				return []
 			level_json_obj = level_json_obj[key_levels[level]]
-
-		# max_result = level_json_obj["maxResults"]
-		cls_objs = level_json_obj[key_levels[key_level_len-1]]
+		cls_objs = level_json_obj
+		if key_level_len > 0:
+			cls_objs = level_json_obj[key_levels[key_level_len-1]]
 		for cls_obj in cls_objs:
 			object_list.append(cls_ref.get_object_from_json(cls_obj))
 		return object_list

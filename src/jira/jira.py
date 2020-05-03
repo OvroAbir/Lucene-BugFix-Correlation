@@ -1,6 +1,7 @@
 import urllib.request, json
 from os import path
 from src.common.file_utils import File
+from src.common.urllib_utils import UrlLibUtil
 from src.jira.jira_issue import Jira_Issue
 from src.common.json_interface import Json_Jira_Issue_Interface
 from src.common.json_pickle_utils import JsonPickleUtil
@@ -47,11 +48,10 @@ class Jira:
 		filename = self.__jira_file_location
 		if path.exists(filename):
 			return File.read_file(filename)
-		with urllib.request.urlopen(self.__query_url) as url_object:
-			result_json = json.loads(url_object.read().decode())
-			pretty_json_str = Jira.make_json_pretty(result_json)
-			File.write_data_to_file(filename, pretty_json_str)
-			return pretty_json_str
+		result_json = UrlLibUtil.download_and_parse_json(self.__query_url)
+		pretty_json_str = Jira.make_json_pretty(result_json)
+		File.write_data_to_file(filename, pretty_json_str)
+		return pretty_json_str
 
 	def __extract_issues_from_json(self, jira_json_str):
 		jira_issues = []
