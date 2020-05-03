@@ -25,3 +25,9 @@ class File:
 		with open(filename, 'r') as f:
 			data = f.read()
 		return data
+
+	@staticmethod
+	def add_str_to_filename(filename, new_str):
+		old_filename, extension = path.splitext(filename)
+		new_filename = old_filename + new_str
+		return new_filename + extension
