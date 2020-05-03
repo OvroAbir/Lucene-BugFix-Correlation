@@ -9,6 +9,22 @@ class Jira_Issue_ChangeLog_Item:
 		self.__from_str = from_str
 		self.__to_str = to_str
 
+	@property
+	def field(self):
+		return self.__field
+
+	@property
+	def field_type(self):
+		return self.__field_type
+
+	@property
+	def from_str(self):
+		return self.__from_str
+
+	@property
+	def to_str(self):
+		return self.__to_str
+
 	@classmethod
 	def get_object_from_json(cls, json_obj):
 		field = Json_Jira_Issue_Interface.init_value_from_nested_json(json_obj, "field")
@@ -25,6 +41,22 @@ class Jira_Issue_ChangeLog_History:
 		self.__created_time = created_time
 		self.__author = author
 		self.__items = items
+
+	@property
+	def id(self):
+		return self.__id
+
+	@property
+	def created_time(self):
+		return self.__created_time
+
+	@property
+	def author(self):
+		return self.author
+
+	@property
+	def items(self):
+		return self.__items
 
 	@classmethod
 	def get_object_from_json(cls, json_obj):
