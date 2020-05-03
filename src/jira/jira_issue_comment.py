@@ -23,6 +23,10 @@ class Jira_Issue_Comment:
 
 		return cls(comment_rest_url, comment_id, author_name, author_key, author_display_name, author_rest_url, comment_body, comment_creation_time)
 
+	@property
+	def author(self):
+		return self.__author
+
 	def __str__(self):
 		return "Comment:(url: {}, id: {}, author: {}, body: {}, created: {})"\
 			.format(self.__comment_rest_url, self.__comment_id, self.__author, self.__comment_body, self.__comment_creation_time)

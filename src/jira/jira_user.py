@@ -8,21 +8,26 @@ class User:
 		self.__display_name = display_name
 		self.__user_url = user_url
 
-	def get_name(self):
+	@property
+	def name(self):
 		return self.__name
 
-	def get_key(self):
+	@property
+	def key(self):
 		return self.__key
 
-	def get_display_name(self):
+	@property
+	def display_name(self):
 		return self.__display_name
 
-	def get_user_url(self):
+	@property
+	def user_url(self):
 		return self.__user_url
 
 	def __str__(self):
-		return "User: ( name: {}, key: {}, display name: {}, url: {} )\n"\
+		return "User: ( name: {}, key: {}, display name: {}, url: {} )\n" \
 			.format(self.__name, self.__key, self.__display_name, self.__user_url)
+
 	def __repr__(self):
 		return self.__str__()
 

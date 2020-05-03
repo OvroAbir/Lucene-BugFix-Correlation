@@ -6,6 +6,54 @@ class Jira_Issue:
 	def __init__(self, json_data):
 		self.__data = Jira_Issue_Data(json_data)
 		self.__resolve_time, self.__close_time = self.__calculate_fix_times()
+		self.__contributors_number = self.__calculate_contributors_number()
+
+	@property
+	def resolve_time(self):
+		return self.__resolve_time
+
+	@property
+	def close_time(self):
+		return self.__close_time
+
+	@property
+	def contributors_number(self):
+		return self.__contributors_number
+
+	@property
+	def data(self):
+		return self.__data
+
+	def __calculate_contributors_number(self):
+		issue_comments = self.__data.comments
+		issue_attachments = self.__data.attachments
+		commenter_set = self.__get_commentors_set(issue_comments)
+		attacher_set = self.__get_attachers_set(issue_attachments)
+		contributor_set = commenter_set.union(attacher_set)
+
+		if self.__data.assignee is not None:
+			contributor_set.add(self.__data.assignee.key)
+		if self.__data.creator is not None:
+			contributor_set.add(self.__data.creator.key)
+		if self.__data.reporter is not None:
+			contributor_set.add(self.__data.reporter.key)
+
+		contributor_set.discard('jira-bot')
+		return len(contributor_set)
+
+	def __get_commentors_set(self, comments):
+		user_set = set()
+		for comment in comments:
+			author = comment.author
+			user_set.add(author.key)
+		return user_set
+
+	def __get_attachers_set(selfself, attachments):
+		user_set = set()
+		for attachment in attachments:
+			author = attachment.author
+			user_set.add(author.key)
+		return user_set
 
 	def __calculate_fix_times(self):
 		issue_history = self.__data.changelog

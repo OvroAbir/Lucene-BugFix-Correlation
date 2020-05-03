@@ -15,6 +15,10 @@ class Jira:
 		self.__download_and_load_json_if_not_exists()
 		self.__issue_list = self.__extract_issues_from_json()
 
+	@property
+	def issue_list(self):
+		return self.__issue_list
+
 	def __download_and_load_json_if_not_exists(self):
 		filename = self.__download_file_location
 		if (path.exists(filename)):

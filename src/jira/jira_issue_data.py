@@ -47,6 +47,30 @@ class Jira_Issue_Data:
 	def created(self):
 		return self.__issue_creation_time
 
+	@property
+	def attachments(self):
+		return self.__attachments
+
+	@property
+	def comments(self):
+		return self.__comments
+
+	@property
+	def creator(self):
+		return self.__issue_creator
+
+	@property
+	def reporter(self):
+		return self.__issue_reporter
+
+	@property
+	def assignee(self):
+		return self.__assignee
+
+	@property
+	def issue_key(self):
+		return self.__issue_key
+
 	def __str__(self):
 		result = "Issue: (id: {}, link: {}, key: {}, priority: {}, assignee: {}, status: {}, creator: {}, reporter: {}, " \
 				 "type: {}, project name: {}, project_id: {}, issue created: {}, issue description: {}, time spent: {}, " \

@@ -16,7 +16,13 @@ class Jira_Attachment:
 		self.__attachment_content_url = attachment_content_url
 		self.__attachment_mime_type = mime_type
 
-	# self.__attachment_content = Jira_Attachment.__download_attachment_content(attachment_content_url)
+	@property
+	def author(self):
+		return self.__author
+
+	@property
+	def attachment_content_url(self):
+		return self.__attachment_content_url
 
 	def get_attachment_content(self):
 		if not self.is_attachment_text_file():
