@@ -1,5 +1,5 @@
-from .jira_user import User
-from .json_interface import Json_Jira_Issue_Interface
+from src.jira.jira_user import User
+from src.common.json_interface import Json_Jira_Issue_Interface
 
 class Jira_Issue_Comment:
 	def __init__(self, comment_rest_url, comment_id, author_name, author_key, author_display_name, author_url,

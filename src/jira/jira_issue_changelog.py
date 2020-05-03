@@ -1,5 +1,5 @@
-from .jira_user import User
-from .json_interface import Json_Jira_Issue_Interface
+from src.jira.jira_user import User
+from src.common.json_interface import Json_Jira_Issue_Interface
 
 
 class Jira_Issue_ChangeLog_Item:
@@ -52,7 +52,7 @@ class Jira_Issue_ChangeLog_History:
 
 	@property
 	def author(self):
-		return self.author
+		return self.__author
 
 	@property
 	def items(self):

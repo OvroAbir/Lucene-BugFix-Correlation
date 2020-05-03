@@ -1,8 +1,8 @@
-from .jira_issue_changelog import Jira_Issue_ChangeLog_History
-from .jira_user import User
-from .json_interface import Json_Jira_Issue_Interface
-from .jira_issue_comment import Jira_Issue_Comment
-from .jira_attachment import Jira_Attachment
+from src.jira.jira_issue_changelog import Jira_Issue_ChangeLog_History
+from src.jira.jira_user import User
+from src.common.json_interface import Json_Jira_Issue_Interface
+from src.jira.jira_issue_comment import Jira_Issue_Comment
+from src.jira.jira_attachment import Jira_Attachment
 
 
 class Jira_Issue_Data:

@@ -1,8 +1,8 @@
 import urllib.request, json
-from os import path, makedirs
-from .file_utils import File
-from .jira_issue import Jira_Issue
-from .json_interface import Json_Jira_Issue_Interface
+from os import path
+from src.common.file_utils import File
+from src.jira.jira_issue import Jira_Issue
+from src.common.json_interface import Json_Jira_Issue_Interface
 
 
 class Jira:

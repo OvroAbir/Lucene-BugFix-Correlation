@@ -1,5 +1,5 @@
-from .jira_issue_data import Jira_Issue_Data
-from .common.time import TimeUtil
+from src.jira.jira_issue_data import Jira_Issue_Data
+from src.common.time import TimeUtil
 
 
 class Jira_Issue:

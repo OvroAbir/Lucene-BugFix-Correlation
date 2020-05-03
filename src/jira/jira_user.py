@@ -1,5 +1,5 @@
-from .json_interface import Json_Jira_Issue_Interface
-from json import dumps
+from src.common.json_interface import Json_Jira_Issue_Interface
+
 
 class User:
 	def __init__(self, name, key, display_name, user_url):

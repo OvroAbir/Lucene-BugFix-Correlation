@@ -1,5 +1,4 @@
-from .jira import Jira
-from .jira_rest_request import Jira_Rest_Request
+from src.jira.jira_rest_request import Jira_Rest_Request
 
 
 jira_url = Jira_Rest_Request.get_jira_rest_url("Closed", 10)

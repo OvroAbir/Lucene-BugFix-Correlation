@@ -1,7 +1,6 @@
-from .jira_user import User
-from .json_interface import Json_Jira_Issue_Interface
+from src.jira.jira_user import User
+from src.common.json_interface import Json_Jira_Issue_Interface
 import urllib.request
-from os import path
 
 
 class Jira_Attachment:
