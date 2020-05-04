@@ -1,47 +1,47 @@
 from src.common.urllib_utils import UrlLibUtil
 from src.jira.jira_issue_changelog import Jira_Issue_ChangeLog_History
 from src.jira.jira_issue_remotelink import JiraIssueRemoteLink
-from src.jira.jira_user import User
-from src.common.json_interface import Json_Jira_Issue_Interface
-from src.jira.jira_issue_comment import Jira_Issue_Comment
-from src.jira.jira_attachment import Jira_Attachment
+from src.jira.jira_user import JiraUser
+from src.common.json_interface import JsonJiraIssueInterface
+from src.jira.jira_issue_comment import JiraIssueComment
+from src.jira.jira_attachment import JiraAttachment
 
 
-class Jira_Issue_Data:
+class JiraIssueData:
 	def __init__(self, json_data):
-		self.__id = Json_Jira_Issue_Interface.init_value_from_json("id", json_data)
-		self.__issue_rest_api_link = Json_Jira_Issue_Interface.init_value_from_json("self", json_data)
-		self.__issue_key = Json_Jira_Issue_Interface.init_value_from_json("key", json_data)
-		self.__priority = Json_Jira_Issue_Interface.init_value_from_nested_json(json_data, "fields", "priority", "name")
-		self.__assignee = Json_Jira_Issue_Interface.init_object_from_nested_json(json_data, User, "fields", "assignee")
-		self.__issue_status = Json_Jira_Issue_Interface.init_value_from_nested_json(json_data, "fields", "status",
+		self.__id = JsonJiraIssueInterface.init_value_from_json("id", json_data)
+		self.__issue_rest_api_link = JsonJiraIssueInterface.init_value_from_json("self", json_data)
+		self.__issue_key = JsonJiraIssueInterface.init_value_from_json("key", json_data)
+		self.__priority = JsonJiraIssueInterface.init_value_from_nested_json(json_data, "fields", "priority", "name")
+		self.__assignee = JsonJiraIssueInterface.init_object_from_nested_json(json_data, JiraUser, "fields", "assignee")
+		self.__issue_status = JsonJiraIssueInterface.init_value_from_nested_json(json_data, "fields", "status",
 																					"name")
-		self.__issue_creator = Json_Jira_Issue_Interface.init_object_from_nested_json(json_data, User, "fields",
+		self.__issue_creator = JsonJiraIssueInterface.init_object_from_nested_json(json_data, JiraUser, "fields",
 																					  "creator")
-		self.__issue_reporter = Json_Jira_Issue_Interface.init_object_from_nested_json(json_data, User, "fields",
+		self.__issue_reporter = JsonJiraIssueInterface.init_object_from_nested_json(json_data, JiraUser, "fields",
 																					   "reporter")
-		self.__issue_type = Json_Jira_Issue_Interface.init_value_from_nested_json(json_data, "fields", "issuetype",
+		self.__issue_type = JsonJiraIssueInterface.init_value_from_nested_json(json_data, "fields", "issuetype",
 																				  "name")
-		self.__project_name = Json_Jira_Issue_Interface.init_value_from_nested_json(json_data, "fields", "project",
+		self.__project_name = JsonJiraIssueInterface.init_value_from_nested_json(json_data, "fields", "project",
 																					"name")
-		self.__project_id = Json_Jira_Issue_Interface.init_value_from_nested_json(json_data, "fields", "project", "id")
-		self.__issue_creation_time = Json_Jira_Issue_Interface.init_value_from_nested_json(json_data, "fields",
+		self.__project_id = JsonJiraIssueInterface.init_value_from_nested_json(json_data, "fields", "project", "id")
+		self.__issue_creation_time = JsonJiraIssueInterface.init_value_from_nested_json(json_data, "fields",
 																						   "created")
-		self.__issue_description = Json_Jira_Issue_Interface.init_value_from_nested_json(json_data, "fields",
+		self.__issue_description = JsonJiraIssueInterface.init_value_from_nested_json(json_data, "fields",
 																						 "description")
-		self.__time_spent = Json_Jira_Issue_Interface.init_value_from_nested_json(json_data, "fields", "timetracking",
+		self.__time_spent = JsonJiraIssueInterface.init_value_from_nested_json(json_data, "fields", "timetracking",
 																				  "timeSpent")
-		self.__issue_summary = Json_Jira_Issue_Interface.init_value_from_nested_json(json_data, "fields", "summary")
-		self.__comments = Json_Jira_Issue_Interface.init_array_from_json(json_data, Jira_Issue_Comment, "fields",
+		self.__issue_summary = JsonJiraIssueInterface.init_value_from_nested_json(json_data, "fields", "summary")
+		self.__comments = JsonJiraIssueInterface.init_array_from_json(json_data, JiraIssueComment, "fields",
 																		 "comment",
 																		 "comments")
-		self.__attachments = Json_Jira_Issue_Interface.init_array_from_json(json_data, Jira_Attachment, "fields",
+		self.__attachments = JsonJiraIssueInterface.init_array_from_json(json_data, JiraAttachment, "fields",
 																			"attachment")
-		self.__changelog = Json_Jira_Issue_Interface.init_array_from_json(json_data, Jira_Issue_ChangeLog_History,
+		self.__changelog = JsonJiraIssueInterface.init_array_from_json(json_data, Jira_Issue_ChangeLog_History,
 																		  "changelog",
 																		  "histories")
-		self.__remotelinks = Json_Jira_Issue_Interface.init_array_from_json(UrlLibUtil.download_and_parse_json(self.__issue_rest_api_link + "/remotelink"),
-																			JiraIssueRemoteLink)
+		self.__remotelinks = JsonJiraIssueInterface.init_array_from_json(UrlLibUtil.download_and_parse_json(self.__issue_rest_api_link + "/remotelink"),
+																		 JiraIssueRemoteLink)
 
 	@property
 	def changelog(self):

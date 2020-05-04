@@ -2,6 +2,7 @@ import urllib.request
 import json
 from time import sleep
 
+
 class UrlLibUtil:
 	@staticmethod
 	def download_content(url):

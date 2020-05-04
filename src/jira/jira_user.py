@@ -1,7 +1,7 @@
-from src.common.json_interface import Json_Jira_Issue_Interface
+from src.common.json_interface import JsonJiraIssueInterface
 
 
-class User:
+class JiraUser:
 	def __init__(self, name, key, display_name, user_url):
 		self.__name = name
 		self.__key = key
@@ -35,9 +35,9 @@ class User:
 	def get_object_from_json(cls, json_obj):
 		if json_obj is None:
 			return None
-		name = Json_Jira_Issue_Interface.init_value_from_json("name", json_obj)
-		key = Json_Jira_Issue_Interface.init_value_from_json("key", json_obj)
-		display_name = Json_Jira_Issue_Interface.init_value_from_json("displayName", json_obj)
-		self_url = Json_Jira_Issue_Interface.init_value_from_json("self", json_obj)
+		name = JsonJiraIssueInterface.init_value_from_json("name", json_obj)
+		key = JsonJiraIssueInterface.init_value_from_json("key", json_obj)
+		display_name = JsonJiraIssueInterface.init_value_from_json("displayName", json_obj)
+		self_url = JsonJiraIssueInterface.init_value_from_json("self", json_obj)
 
 		return cls(name, key, display_name, self_url)

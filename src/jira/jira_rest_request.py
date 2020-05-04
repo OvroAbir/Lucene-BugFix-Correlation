@@ -1,6 +1,6 @@
-class Jira_Rest_Request:
+class JiraRestRequest:
 	@staticmethod
-	def __make_jql_agrs(issue_status, number_of_issues):
+	def __make_jql_args(issue_status, number_of_issues):
 		arguments = {
 			"baseurl": "https://issues.apache.org/jira/rest/api/2/search?jql=",
 			"project": "LUCENE",
@@ -56,4 +56,4 @@ class Jira_Rest_Request:
 
 	@staticmethod
 	def get_jira_rest_url(issue_status, number_of_issues):
-		return Jira_Rest_Request.__construct_jql_url(Jira_Rest_Request.__make_jql_agrs(issue_status, number_of_issues))
+		return JiraRestRequest.__construct_jql_url(JiraRestRequest.__make_jql_args(issue_status, number_of_issues))

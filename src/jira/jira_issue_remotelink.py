@@ -1,4 +1,4 @@
-from src.common.json_interface import Json_Jira_Issue_Interface
+from src.common.json_interface import JsonJiraIssueInterface
 
 
 class JiraIssueRemoteLink:
@@ -22,6 +22,6 @@ class JiraIssueRemoteLink:
 
 	@classmethod
 	def get_object_from_json(cls, json_remote_link_data):
-		link = Json_Jira_Issue_Interface.init_value_from_nested_json(json_remote_link_data, "object", "url")
-		title = Json_Jira_Issue_Interface.init_value_from_nested_json(json_remote_link_data, "object", "title")
+		link = JsonJiraIssueInterface.init_value_from_nested_json(json_remote_link_data, "object", "url")
+		title = JsonJiraIssueInterface.init_value_from_nested_json(json_remote_link_data, "object", "title")
 		return cls(link, title)

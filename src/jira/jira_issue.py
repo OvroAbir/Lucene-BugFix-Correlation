@@ -1,10 +1,10 @@
-from src.jira.jira_issue_data import Jira_Issue_Data
+from src.jira.jira_issue_data import JiraIssueData
 from src.common.time import TimeUtil
 
 
-class Jira_Issue:
+class JiraIssue:
 	def __init__(self, json_data):
-		self.__data = Jira_Issue_Data(json_data)
+		self.__data = JiraIssueData(json_data)
 		self.__resolve_time, self.__close_time = self.__calculate_fix_times()
 		self.__contributors_number = self.__calculate_contributors_number()
 		self.__num_of_files_changed, self.__num_of_lines_changed = self.__get_number_of_files_lines_changed_from_latest_patch()
