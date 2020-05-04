@@ -8,10 +8,10 @@ class JiraIssue:
 		self.__resolve_time, self.__close_time = self.__calculate_fix_times()
 		self.__contributors_number = self.__calculate_contributors_number()
 		self.__num_of_files_changed, self.__num_of_lines_changed = self.__get_number_of_files_lines_changed_from_latest_patch()
-		self.__commit_hashes = self.__get_commit_hashes_from_comments()
-		self.__git_urls = self.__get_git_urls_from_comments()
-		# TODO: use self.__commit_hashes to get diff
-		# TODO: self.__git_urls to get diff
+		# TODO: if patch unavaiable, use self.__get_commit_hashes_from_comments() to get diff
+		# and save it to self.__num_of_files_changed, self.__num_of_lines_changed
+		# TODO: if pathch unavailable, self.__get_git_urls_from_comments() to get diff
+		# and save it to self.__num_of_files_changed, self.__num_of_lines_changed
 
 	@property
 	def resolve_time(self):
