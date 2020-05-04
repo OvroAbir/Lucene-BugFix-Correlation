@@ -23,9 +23,8 @@ class Jira:
 			return self.__extract_issues_from_json(json_str)
 
 	def __save_issue_list_to_self_file(self):
-		if self.__does_self_file_exists():
-			return
-		File.write_data_to_file(self.__self_file_location, JsonPickleUtil.get_str_from_obj(self.__issue_list))
+		json_pickle = JsonPickleUtil.get_str_from_obj(self.__issue_list)
+		File.write_data_to_file(self.__self_file_location, json_pickle)
 
 	@property
 	def issue_list(self):

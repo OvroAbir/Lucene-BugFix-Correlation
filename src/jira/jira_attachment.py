@@ -24,6 +24,14 @@ class Jira_Attachment:
 	def attachment_content_url(self):
 		return self.__attachment_content_url
 
+	@property
+	def created(self):
+		return self.__attachment_created
+
+	@property
+	def filename(self):
+		return self.__attachment_filename
+
 	def get_attachment_content(self):
 		if not self.is_attachment_text_file():
 			raise Exception("Attachment is not text file. Attachment type is {}".format(self.__attachment_mime_type))

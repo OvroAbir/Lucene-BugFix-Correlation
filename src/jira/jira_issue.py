@@ -7,6 +7,7 @@ class Jira_Issue:
 		self.__data = Jira_Issue_Data(json_data)
 		self.__resolve_time, self.__close_time = self.__calculate_fix_times()
 		self.__contributors_number = self.__calculate_contributors_number()
+		self.__num_of_files_changed, self.__num_of_lines_changed = self.__get_number_of_files_lines_changed_from_latest_patch()
 
 	@property
 	def resolve_time(self):
@@ -88,3 +89,21 @@ class Jira_Issue:
 				if item.field == 'status':
 					status_event_times.append((history.created_time, item.from_str, item.to_str))
 		return status_event_times
+
+	def __get_latest_patch_attachment(self):
+		attachments = self.__data.attachments
+		sorted_attachments = sorted(attachments, key=lambda attch: attch.created, reverse=True)
+		for attachment in sorted_attachments:
+			if attachment.is_attachment_text_file() and attachment.filename.endswith('.patch'):
+				return attachment
+		return None
+
+	def __get_number_of_files_lines_changed_from_latest_patch(self):
+		if len(self.__data.attachments) == 0:
+			return 0, 0
+		latest_attachment = self.__get_latest_patch_attachment()
+		if latest_attachment is None:
+			return 0, 0
+		# TODO: analyze the latest patch file
+		# start by getting the content by calling latest_attachment.get_attachment_content()
+		return 0, 0

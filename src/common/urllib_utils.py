@@ -1,6 +1,6 @@
 import urllib.request
 import json
-
+from time import sleep
 
 class UrlLibUtil:
 	@staticmethod
@@ -12,4 +12,5 @@ class UrlLibUtil:
 	@staticmethod
 	def download_and_parse_json(url):
 		content = UrlLibUtil.download_content(url)
+		sleep(0.1)
 		return json.loads(content.decode())
