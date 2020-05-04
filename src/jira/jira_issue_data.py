@@ -79,6 +79,10 @@ class Jira_Issue_Data:
 	def remote_links(self):
 		return self.__remotelinks
 
+	@property
+	def rest_link(self):
+		return self.__issue_rest_api_link
+
 	def __str__(self):
 		result = "Issue: (id: {}, link: {}, key: {}, priority: {}, assignee: {}, status: {}, creator: {}, reporter: {}, " \
 				 "type: {}, project name: {}, project_id: {}, issue created: {}, issue description: {}, time spent: {}, " \
