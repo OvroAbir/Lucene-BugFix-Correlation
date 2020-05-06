@@ -1,10 +1,10 @@
-import urllib.request, json
+import json
 from os import path
 from src.common.file_utils import FileUtil
-from src.common.urllib_utils import UrlLibUtil
-from src.jira.jira_issue import JiraIssue
 from src.common.json_interface import JsonJiraIssueInterface
 from src.common.json_pickle_utils import JsonPickleUtil
+from src.common.urllib_utils import UrlLibUtil
+from src.jira.jira_issue import JiraIssue
 
 
 class Jira:
@@ -63,3 +63,53 @@ class Jira:
 	@staticmethod
 	def make_json_pretty(json_data):
 		return json.dumps(json_data, indent=2, sort_keys=True)
+
+	@property
+	def issue_keys(self):
+		keys = []
+		for issue in self.__issue_list:
+			keys.append(issue.data.issue_key)
+		return keys
+
+	@property
+	def fix_times(self):
+		times = []
+		for issue in self.__issue_list:
+			times.append(issue.fix_time)
+		return times
+
+	@property
+	def close_times(self):
+		times = []
+		for issue in self.__issue_list:
+			times.append(issue.close_time)
+		return times
+
+	@property
+	def resolve_times(self):
+		times = []
+		for issue in self.__issue_list:
+			times.append(issue.resolve_time)
+		return times
+
+	@property
+	def num_of_contributors(self):
+		nums = []
+		for issue in self.__issue_list:
+			nums.append(issue.contributors_number)
+		return nums
+
+	@property
+	def num_of_changed_files(self):
+		nums = []
+		for issue in self.__issue_list:
+			nums.append(issue.number_of_files_changed)
+		return nums
+
+	@property
+	def num_of_changed_lines(self):
+		nums = []
+		for issue in self.__issue_list:
+			nums.append(issue.number_of_lines_changed)
+		return nums
+

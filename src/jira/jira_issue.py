@@ -1,5 +1,5 @@
 from src.jira.jira_issue_data import JiraIssueData
-from src.common.time import TimeUtil
+from src.common.time_utils import TimeUtil
 
 
 class JiraIssue:
@@ -29,13 +29,13 @@ class JiraIssue:
 	def data(self):
 		return self.__data
 
-	@property
-	def commit_hashes(self):
-		return self.__commit_hashes
-
-	@property
-	def git_urls(self):
-		return self.__git_urls
+	# @property
+	# def commit_hashes(self):
+	# 	return self.__commit_hashes
+	#
+	# @property
+	# def git_urls(self):
+	# 	return self.__git_urls
 
 	@property
 	def number_of_files_changed(self):

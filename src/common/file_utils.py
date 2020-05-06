@@ -1,11 +1,14 @@
 from os import path, makedirs, remove
-import logging
 
 
 class FileUtil:
 	@staticmethod
+	def create_directory_if_not_exists(directory_name):
+		makedirs(directory_name, exist_ok=True)
+
+	@staticmethod
 	def write_data_to_file(filename, data):
-		if (path.exists(path.dirname(filename)) == False):
+		if not path.exists(path.dirname(filename)):
 			makedirs(path.dirname(filename))
 		print("Writing data to " + filename)
 		with open(filename, 'w') as f:
@@ -32,3 +35,7 @@ class FileUtil:
 		old_filename, extension = path.splitext(filename)
 		new_filename = old_filename + new_str
 		return new_filename + extension
+
+	@staticmethod
+	def concat_filename_with_path(parent_path, filename):
+		return path.join(parent_path, filename)
