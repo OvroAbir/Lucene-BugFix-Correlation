@@ -8,8 +8,7 @@ class FileUtil:
 
 	@staticmethod
 	def write_data_to_file(filename, data):
-		if not path.exists(path.dirname(filename)):
-			makedirs(path.dirname(filename))
+		FileUtil.create_directory_if_not_exists(path.dirname(filename))
 		print("Writing data to " + filename)
 		with open(filename, 'w') as f:
 			f.write(data)

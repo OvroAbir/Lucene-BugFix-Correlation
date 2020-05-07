@@ -12,6 +12,8 @@ class UrlLibUtil:
 
 	@staticmethod
 	def download_and_parse_json(url):
+		print("Requesting data", url)
 		content = UrlLibUtil.download_content(url)
+		print("Downloaded data")
 		sleep(0.1)
 		return json.loads(content.decode())

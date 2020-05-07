@@ -27,4 +27,14 @@ class MatPlotUtil:
 									  y_axis_lables[y_index], x_axis_lables[x_index], y_axis_lables[y_index],
 									  graph_driectory, graph_title)
 
+	@staticmethod
+	def plot_jira_data(num_of_contributors, resolve_times, close_times, fix_times,
+				  num_of_changed_files, num_of_changed_lines, graph_folder="../graphs"):
+		x_axis_datas = [num_of_contributors, num_of_changed_lines, num_of_changed_files]
+		x_axis_labels = ["Number of Contributors", "Number of Changed Lines", "Number of Changed Files"]
+		y_axis_datas = [resolve_times, close_times, fix_times]
+		y_axis_labels = ["Resolve Time", "Closing Time", "Bug Fix Time"]
+		MatPlotUtil.plot_all_data(x_axis_datas, y_axis_datas, x_axis_labels, y_axis_labels, graph_folder)
+
+
 
