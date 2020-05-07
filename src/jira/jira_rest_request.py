@@ -66,11 +66,11 @@ class JiraRestRequest:
 		file_names = []
 		start = 0
 		max_results = 1000
-		while start < 4000:
+		while start < 3000:
 			url = JiraRestRequest.get_one_jira_rest_url("Closed", max_results, start)
 			filename = "../data/lucene-closed-data-3400-from-" + str(start) + ".json"
 			jira_urls.append(url)
 			file_names.append(filename)
-			start = start + 1000
+			start = start + max_results
 
 		return jira_urls, file_names
