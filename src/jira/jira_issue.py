@@ -1,3 +1,4 @@
+from src.diff.files_changed_number import FilesChangedNumber
 from src.jira.jira_issue_data import JiraIssueData
 from src.common.time_utils import TimeUtil
 
@@ -122,7 +123,6 @@ class JiraIssue:
 				return attachment
 		return None
 
-
 	def __get_number_of_files_lines_changed_from_latest_patch(self):
 		if len(self.__data.attachments) == 0:
 			return 0, 0
@@ -131,7 +131,12 @@ class JiraIssue:
 			return 0, 0
 		# TODO: analyze the latest patch file
 		# start by getting the content by calling latest_attachment.get_attachment_content()
-		return 0, 0
+		string = latest_attachment.get_attachment_content()
+		count_files = FilesChangedNumber.get_num_files_changed(string)
+		count_lines = FilesChangedNumber.get_num_lines_changed(string)
+
+		print(count_files, "\n", count_lines)
+		return count_files, count_lines
 
 	def __get_commit_hashes_from_comments(self):
 		comments = self.__data.comments
@@ -150,4 +155,3 @@ class JiraIssue:
 			if url is not None:
 				urls.append(url)
 		return urls
-
