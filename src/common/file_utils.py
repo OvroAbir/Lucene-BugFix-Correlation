@@ -7,6 +7,10 @@ class FileUtil:
 		makedirs(directory_name, exist_ok=True)
 
 	@staticmethod
+	def create_directory_if_not_exists_for_file(file_name):
+		FileUtil.create_directory_if_not_exists(path.dirname(file_name))
+
+	@staticmethod
 	def write_data_to_file(filename, data):
 		FileUtil.create_directory_if_not_exists(path.dirname(filename))
 		print("Writing data to " + filename)

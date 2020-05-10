@@ -125,3 +125,13 @@ class MatPlotUtil:
 			values_list.append(vals)
 		return values_list
 
+	@staticmethod
+	def plot_histogram(data, x_axis_label, y_axis_label, filename, bins=None):
+		FileUtil.create_directory_if_not_exists_for_file(filename)
+		plt.xlabel(x_axis_label)
+		plt.ylabel(y_axis_label)
+		plt.hist(data, bins=bins)
+		plt.savefig(fname=filename)
+		print("Saving histogram", filename)
+		plt.close()
+
