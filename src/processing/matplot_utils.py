@@ -83,7 +83,7 @@ class MatPlotUtil:
 		x_axis_datas = [num_of_contributors, num_of_changed_lines, num_of_changed_files]
 		x_axis_labels = ["Number of Contributors", "Number of Changed Lines", "Number of Changed Files"]
 		y_axis_datas = [resolve_times, close_times, fix_times]
-		y_axis_labels = ["Resolve Time", "Closing Time", "Bug Fix Time"]
+		y_axis_labels = ["Resolve Time (sec)", "Closing Time (sec)", "Bug Fix Time (sec)"]
 		MatPlotUtil.plot_all_data(x_axis_datas, y_axis_datas, x_axis_labels, y_axis_labels, graph_folder)
 
 

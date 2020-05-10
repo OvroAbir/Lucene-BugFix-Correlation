@@ -1,5 +1,5 @@
 from scipy import stats
-from scipy.stats import kurtosis, skew
+from scipy.stats import kurtosis, skew, spearmanr
 from src.processing.matplot_utils import MatPlotUtil
 from src.common.time_utils import TimeUtil
 
@@ -46,24 +46,50 @@ class SciPyUtil:
 	@staticmethod
 	def __plot_histograms(jira):
 		MatPlotUtil.plot_histogram(jira.num_of_contributors, "Number of Contributors", "Number of Issues",
-								   "../graphs/normal/histograms/NumberOfContributors.png")
+								   "../graphs/normal/histograms/NumberOfContributors.png", bins=30)
 		MatPlotUtil.plot_histogram(jira.num_of_changed_files, "Number of Changed Files", "Number of Issues",
 								   "../graphs/normal/histograms/NumberOfChangedFiles.png")
 		MatPlotUtil.plot_histogram(jira.num_of_changed_lines, "Number of Changed Lines", "Number of Issues",
 								   "../graphs/normal/histograms/NumberOfChangedLines.png")
 		MatPlotUtil.plot_histogram(jira.resolve_times, "Resolve Time(second)", "Number of Issues",
-								   "../graphs/normal/histograms/ResolveTime.png", bins=80)
+								   "../graphs/normal/histograms/ResolveTime.png", bins=40)
 		MatPlotUtil.plot_histogram(jira.close_times, "Closing Time(second)", "Number of Issues",
-								   "../graphs/normal/histograms/ClosingTime.png", bins=80)
+								   "../graphs/normal/histograms/ClosingTime.png", bins=40)
 		MatPlotUtil.plot_histogram(jira.fix_times, "Bug Fix Time(second)", "Number of Issues",
-								   "../graphs/normal/histograms/FixTime.png", bins=80)
+								   "../graphs/normal/histograms/FixTime.png", bins=40)
 		# MatPlotUtil.plot_histogram(TimeUtil.convert_seconds_to_hours(jira.resolve_times), "Resolve Time(hours)", "Number of Issues",
 		# 						   "../graphs/normal/histograms/ResolveTimeHours.png")
 		# MatPlotUtil.plot_histogram(TimeUtil.convert_seconds_to_days(jira.resolve_times), "Resolve Time(days)", "Number of Issues",
 		# 						   "../graphs/normal/histograms/ResolveTimeDays.png")
 
 	@staticmethod
+	def __spearman_corelation(data1, data2):
+		return spearmanr(data1, data2)
+
+	@staticmethod
+	def __check_spearman_correlation(jira):
+		print("Spearman correlation for Resolve time and number of contributors:",
+			  SciPyUtil.__spearman_corelation(jira.resolve_times, jira.num_of_contributors))
+		print("Spearman correlation for Close time and number of contributors:",
+			  SciPyUtil.__spearman_corelation(jira.close_times, jira.num_of_contributors))
+		print("Spearman correlation for Bug Fix time and number of contributors:",
+			  SciPyUtil.__spearman_corelation(jira.fix_times, jira.num_of_contributors))
+		print("Spearman correlation for Resolve time and number of changed file:",
+			  SciPyUtil.__spearman_corelation(jira.resolve_times, jira.num_of_changed_files))
+		print("Spearman correlation for Close time and number of changed file:",
+			  SciPyUtil.__spearman_corelation(jira.close_times, jira.num_of_changed_files))
+		print("Spearman correlation for Bug Fix time and number of changed file:",
+			  SciPyUtil.__spearman_corelation(jira.fix_times, jira.num_of_changed_files))
+		print("Spearman correlation for Resolve time and number of changed lines:",
+			  SciPyUtil.__spearman_corelation(jira.resolve_times, jira.num_of_changed_lines))
+		print("Spearman correlation for Close time and number of changed lines:",
+			  SciPyUtil.__spearman_corelation(jira.close_times, jira.num_of_changed_lines))
+		print("Spearman correlation for Bug Fix time and number of changed lines:",
+			  SciPyUtil.__spearman_corelation(jira.fix_times, jira.num_of_changed_lines))
+
+	@staticmethod
 	def check_jira_data_normal_distribution(jira):
 		SciPyUtil.__check_normal_test(jira)
 		SciPyUtil.__determine_skew_and_kurtosis(jira)
 		SciPyUtil.__plot_histograms(jira)
+		SciPyUtil.__check_spearman_correlation(jira)
