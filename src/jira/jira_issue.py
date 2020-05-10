@@ -96,13 +96,16 @@ class JiraIssue:
 
 		for (time, from_event, to_event) in status_event_times:
 			if to_event == 'Resolved':
+				if closed_time != 0: # issue has been reopened
+					resolved_time = resolved_time + closed_time
+					closed_time = 0
 				resolved_time = resolved_time + TimeUtil.get_time_diff(from_time, time)
 				from_time = time
 			elif to_event == 'Closed':
 				closed_time = TimeUtil.get_time_diff(from_time, time)
 				from_time = time
-			elif closed_time != 0:
-				resolved_time = resolved_time + closed_time
+			elif closed_time != 0: # issue has been reopened and the status is something other than close and resolve
+				resolved_time = resolved_time + closed_time # intermediate times are considered as resolve time
 				closed_time = 0
 				from_time = time
 		return resolved_time, closed_time
