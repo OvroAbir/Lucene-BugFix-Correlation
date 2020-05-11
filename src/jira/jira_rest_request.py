@@ -7,6 +7,7 @@ class JiraRestRequest:
 			"issueType": "Bug",
 			"maxResults": str(number_of_issues),
 			"startAt": str(start),
+			"resolution": "Fixed",
 			"status": issue_status,
 			"fields": [
 				"id",
@@ -42,6 +43,8 @@ class JiraRestRequest:
 			url = url + "project=" + arguments["project"] + "+AND+"
 		if "issueType" in arguments:
 			url = url + "issueType=" + arguments["issueType"] + "+AND+"
+		if "resolution" in arguments:
+			url = url + "resolution=" + arguments["resolution"] + "+AND+"
 		if "status" in arguments:
 			url = url + "status=" + arguments["status"] + "&"
 		if "maxResults" in arguments:
@@ -68,7 +71,7 @@ class JiraRestRequest:
 		max_results = 1000
 		while start < 3000:
 			url = JiraRestRequest.get_one_jira_rest_url("Closed", max_results, start)
-			filename = "../data/lucene-closed-data-3400-from-" + str(start) + ".json"
+			filename = "../data/lucene-closed-data-2100-from-" + str(start) + ".json"
 			jira_urls.append(url)
 			file_names.append(filename)
 			start = start + max_results
