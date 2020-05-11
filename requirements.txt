@@ -3,3 +3,4 @@ jsonpickle~=1.4.1
 matplotlib~=3.2.1
 numpy~=1.18.1
 scipy~=1.4.1
+PyGithub~=1.51
