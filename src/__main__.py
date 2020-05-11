@@ -11,6 +11,7 @@ def main():
 							   jira.fix_times, jira.num_of_changed_files, jira.num_of_changed_lines)
 	print(jira_urls)
 	print(SciPyUtil.check_jira_data_normal_distribution(jira))
+	print("number of issues", len(jira.issue_list))
 
 
 if __name__ == "__main__":

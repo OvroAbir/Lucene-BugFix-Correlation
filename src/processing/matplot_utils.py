@@ -48,7 +48,9 @@ class MatPlotUtil:
 
 	@staticmethod
 	def boxplot_data(x, y, point_label, x_axis_name, y_axis_name, image_directory, graph_title):
-		# plt.style.use('ggplot')
+		# # plt.style.use('ggplot')
+		# fig, ax = plt.subplots(figsize=(30, 25))
+
 		fig, ax = plt.subplots()
 		dictionary = MatPlotUtil.get_dictionary_from_two_lists(x, y)
 		data = MatPlotUtil.get_dict_vals_as_2d_list(dictionary)
@@ -61,11 +63,14 @@ class MatPlotUtil:
 		ax.legend(facecolor='white')
 		ax.set_title(graph_title)
 		FileUtil.create_directory_if_not_exists(image_directory)
+		# plt.setp(ax.get_xticklabels(), rotation=90, horizontalalignment='left', fontsize='x-small')
+		plt.setp(ax.get_xticklabels(), rotation=90, horizontalalignment='left')
 		plt.savefig(FileUtil.concat_filename_with_path(image_directory, graph_title + ".png"), bbox_inches='tight')
 		plt.close()
 
 	@staticmethod
 	def plot_all_data(x_axis_datas, y_axis_datas, x_axis_lables, y_axis_lables, graph_driectory):
+		plt.rcParams["figure.figsize"] = [plt.rcParams["figure.figsize"][0]*2.25, plt.rcParams["figure.figsize"][1]*1.5]
 		for x_index in range(len(x_axis_datas)):
 			for y_index in range(len(y_axis_datas)):
 				graph_title = y_axis_lables[y_index] + " vs " + x_axis_lables[x_index]
