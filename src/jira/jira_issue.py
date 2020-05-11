@@ -138,7 +138,6 @@ class JiraIssue:
 		count_files = FilesChangedNumber.get_num_files_changed(string)
 		count_lines = FilesChangedNumber.get_num_lines_changed(string)
 
-		print(count_files, "\n", count_lines)
 		return count_files, count_lines
 
 	def __get_commit_hashes_from_comments(self):
