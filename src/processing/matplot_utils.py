@@ -21,7 +21,7 @@ class MatPlotUtil:
 
 	@staticmethod
 	def plot_all_types_data(x, y, point_label, x_axis_name, y_axis_name, image_directory, graph_title):
-		MatPlotUtil.pointplot_data(x, y, point_label, x_axis_name, y_axis_name, image_directory+"/PointPlot", graph_title)
+		MatPlotUtil.pointplot_data(x, y, point_label, x_axis_name, y_axis_name, image_directory+"/ScatterPlot", graph_title)
 		MatPlotUtil.boxplot_data(x, y, point_label, x_axis_name, y_axis_name, image_directory + "/BoxPlot",
 									graph_title)
 		MatPlotUtil.violinplot_data(x, y, point_label, x_axis_name, y_axis_name, image_directory + "/ViolinPlot",
@@ -49,8 +49,6 @@ class MatPlotUtil:
 	@staticmethod
 	def boxplot_data(x, y, point_label, x_axis_name, y_axis_name, image_directory, graph_title):
 		# # plt.style.use('ggplot')
-		# fig, ax = plt.subplots(figsize=(30, 25))
-
 		fig, ax = plt.subplots()
 		dictionary = MatPlotUtil.get_dictionary_from_two_lists(x, y)
 		data = MatPlotUtil.get_dict_vals_as_2d_list(dictionary)
@@ -90,6 +88,17 @@ class MatPlotUtil:
 		y_axis_datas = [resolve_times, close_times, fix_times]
 		y_axis_labels = ["Resolve Time (sec)", "Closing Time (sec)", "Bug Fix Time (sec)"]
 		MatPlotUtil.plot_all_data(x_axis_datas, y_axis_datas, x_axis_labels, y_axis_labels, graph_folder)
+		MatPlotUtil.plot_partial_graph([x_axis_datas[1]], y_axis_datas, [x_axis_labels[1]], y_axis_labels, graph_folder, 120)
+
+	@staticmethod
+	def plot_partial_graph(x_axis_datas, y_axis_datas, x_axis_lables, y_axis_lables, graph_folder, counts_of_points_to_plot):
+		for x_index in range(len(x_axis_datas)):
+			for y_index in range(len(y_axis_datas)):
+				x_axis_data_partial, y_axis_data_partial = MatPlotUtil.__get_partail_datas_along_x_axis(x_axis_datas[x_index], y_axis_datas[y_index], counts_of_points_to_plot)
+				graph_title = y_axis_lables[y_index] + " vs " + x_axis_lables[x_index] + " (partial)"
+				MatPlotUtil.plot_all_types_data(x_axis_data_partial, y_axis_data_partial,
+												y_axis_lables[y_index], x_axis_lables[x_index], y_axis_lables[y_index],
+												graph_folder+"/partial", graph_title)
 
 
 	@staticmethod
@@ -120,7 +129,16 @@ class MatPlotUtil:
 				values_dict[xs[i]].append(ys[i])
 			else:
 				values_dict[xs[i]] = [ys[i]]
-		return values_dict
+		pruned_dictionary = MatPlotUtil.__discard_low_density_data(values_dict)
+		return pruned_dictionary
+
+	@staticmethod
+	def __discard_low_density_data(dictionary): # discard keys if less than 5 value exists for this key
+		new_dict = {}
+		for key in dictionary:
+			if len(dictionary[key]) >= 5:
+				new_dict[key] = dictionary[key]
+		return dictionary
 
 	@staticmethod
 	def get_dict_vals_as_2d_list(dictionary):
@@ -139,4 +157,19 @@ class MatPlotUtil:
 		plt.savefig(fname=filename)
 		print("Saving histogram", filename)
 		plt.close()
+
+	@staticmethod
+	def __get_partail_datas_along_x_axis(xs, ys, counts_of_points_to_plot):
+		vals_dict = MatPlotUtil.get_dictionary_from_two_lists(xs, ys)
+		count = 0
+		nxs = []
+		nys = []
+		for key in sorted(vals_dict):
+			if count > counts_of_points_to_plot:
+				break
+			for val in vals_dict[key]:
+				nxs.append(key)
+				nys.append(val)
+			count = count + 1
+		return nxs, nys
 

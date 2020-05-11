@@ -1,7 +1,6 @@
 from scipy import stats
 from scipy.stats import kurtosis, skew, spearmanr
 from src.processing.matplot_utils import MatPlotUtil
-from src.common.time_utils import TimeUtil
 
 
 class SciPyUtil:
@@ -64,7 +63,8 @@ class SciPyUtil:
 
 	@staticmethod
 	def __spearman_corelation(data1, data2):
-		return spearmanr(data1, data2)
+		ndata1, ndata2 = SciPyUtil.__discard_low_density_points(data2, data1)
+		return spearmanr(ndata1, ndata2)
 
 	@staticmethod
 	def __check_spearman_correlation(jira):
@@ -93,3 +93,16 @@ class SciPyUtil:
 		SciPyUtil.__determine_skew_and_kurtosis(jira)
 		SciPyUtil.__plot_histograms(jira)
 		SciPyUtil.__check_spearman_correlation(jira)
+
+	@staticmethod
+	def __discard_low_density_points(xs, ys):
+		vals_dict = MatPlotUtil.get_dictionary_from_two_lists(xs, ys)
+		nxs = []
+		nys = []
+		for key in sorted(vals_dict):
+			vals = vals_dict[key]
+			for val in vals:
+				nxs.append(key)
+				nys.append(val)
+		return nxs, nys
+
