@@ -1,5 +1,5 @@
 from matplotlib import pyplot as plt
-from matplotlib.ticker import MaxNLocator
+from matplotlib.ticker import MaxNLocator, LinearLocator
 from src.common.file_utils import FileUtil
 from statistics import median
 
@@ -53,6 +53,17 @@ class MatPlotUtil:
 		dictionary = MatPlotUtil.get_dictionary_from_two_lists(x, y)
 		data = MatPlotUtil.get_dict_vals_as_2d_list(dictionary)
 		labels = sorted(dictionary)
+		observation_counts = MatPlotUtil.__get_observation_counts(dictionary)
+
+		# ax2 = ax.twiny()
+		# ax2.xaxis.set_minor_locator(LinearLocator())
+		# # ax2.set_xlim(ax.get_xlim())
+		# ax2.set_xlabel("Observation Count")
+		# ax2.set_xticklabels(observation_counts)
+		# print("title:", graph_title, observation_counts)
+		# ax2.set_yticks(observation_counts)
+		# ax2.set_labels(observation_counts)
+
 
 		ax.boxplot(data, labels=labels)
 		ax.yaxis.grid(True)
@@ -89,6 +100,7 @@ class MatPlotUtil:
 		y_axis_labels = ["Resolve Time (sec)", "Closing Time (sec)", "Bug Fix Time (sec)"]
 		MatPlotUtil.plot_all_data(x_axis_datas, y_axis_datas, x_axis_labels, y_axis_labels, graph_folder)
 		MatPlotUtil.plot_partial_graph([x_axis_datas[1]], y_axis_datas, [x_axis_labels[1]], y_axis_labels, graph_folder, 120)
+		MatPlotUtil.plot_grouped_graph([x_axis_datas[1]], y_axis_datas, [x_axis_labels[1]], y_axis_labels, graph_folder, 100)
 
 	@staticmethod
 	def plot_partial_graph(x_axis_datas, y_axis_datas, x_axis_lables, y_axis_lables, graph_folder, counts_of_points_to_plot):
@@ -100,6 +112,15 @@ class MatPlotUtil:
 												y_axis_lables[y_index], x_axis_lables[x_index], y_axis_lables[y_index],
 												graph_folder+"/partial", graph_title)
 
+	@staticmethod
+	def plot_grouped_graph(x_axis_datas, y_axis_datas, x_axis_lables, y_axis_lables, graph_folder, x_intervals_len):
+		for x_index in range(len(x_axis_datas)):
+			for y_index in range(len(y_axis_datas)):
+				x_axis_data, y_axis_data = MatPlotUtil.__get_grouped_datas_along_x_axis(x_axis_datas[x_index], y_axis_datas[y_index], x_intervals_len)
+				graph_title = y_axis_lables[y_index] + " vs " + x_axis_lables[x_index] + " (grouped)"
+				MatPlotUtil.boxplot_data(x_axis_data, y_axis_data,
+												y_axis_lables[y_index], x_axis_lables[x_index], y_axis_lables[y_index],
+												graph_folder + "/BoxPlot", graph_title)
 
 	@staticmethod
 	def convert_yaxis_to_median(xs, ys):
@@ -172,4 +193,32 @@ class MatPlotUtil:
 				nys.append(val)
 			count = count + 1
 		return nxs, nys
+
+	@staticmethod
+	def __get_observation_counts(dictionary):
+		counts = []
+		for key in sorted(dictionary):
+			counts.append(len(dictionary[key]))
+		return counts
+
+	@staticmethod
+	def __get_grouped_datas_along_x_axis(xs, ys, interval_len):
+		interval_dic = {}
+		for i in range(len(xs)):
+			key = int(xs[i] / interval_len)
+			if key in interval_dic:
+				interval_dic[key].append(ys[i])
+			else:
+				interval_dic[key] = [ys[i]]
+
+		nxs = []
+		nys = []
+		for key in sorted(interval_dic):
+			interval_str = "{:05d}-{:05d}".format(key*interval_len, (key+1)*interval_len-1)
+			for val in interval_dic[key]:
+				nxs.append(interval_str)
+				nys.append(val)
+		return nxs, nys
+
+
 
