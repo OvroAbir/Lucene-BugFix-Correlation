@@ -119,8 +119,8 @@ class MatPlotUtil:
 		y_axis_datas = [resolve_times, close_times, fix_times]
 		y_axis_labels = ["Resolve Time (sec)", "Closing Time (sec)", "Bug Fix Time (sec)"]
 		MatPlotUtil.plot_all_data(x_axis_datas, y_axis_datas, x_axis_labels, y_axis_labels, graph_folder)
-		MatPlotUtil.plot_partial_graph([x_axis_datas[1]], y_axis_datas, [x_axis_labels[1]], y_axis_labels, graph_folder, 120)
-		MatPlotUtil.plot_grouped_graph([x_axis_datas[1]], y_axis_datas, [x_axis_labels[1]], y_axis_labels, graph_folder, 50)
+		# MatPlotUtil.plot_partial_graph([x_axis_datas[1]], y_axis_datas, [x_axis_labels[1]], y_axis_labels, graph_folder, 120)
+		MatPlotUtil.plot_grouped_graph([x_axis_datas[1]], y_axis_datas, [x_axis_labels[1]], y_axis_labels, graph_folder, 30)
 
 	@staticmethod
 	def plot_partial_graph(x_axis_datas, y_axis_datas, x_axis_lables, y_axis_lables, graph_folder, counts_of_points_to_plot):
@@ -181,6 +181,7 @@ class MatPlotUtil:
 			if len(dictionary[key]) >= 5:
 				new_dict[key] = dictionary[key]
 		# print("new dic", new_dict)
+		# return dictionary
 		return new_dict
 
 	@staticmethod
