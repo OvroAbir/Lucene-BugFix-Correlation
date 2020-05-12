@@ -47,6 +47,25 @@ class MatPlotUtil:
 		plt.close()
 
 	@staticmethod
+	def __get_zero_padded_strs(nums):
+		max_num = max(nums)
+		max_len = len(str(max_num))
+		s = "{:0" + str(max_len) +"d}"
+		num_strs = []
+		for num in nums:
+			num_strs.append(s.format(num))
+		return num_strs
+
+	@staticmethod
+	def __get_labels_with_oobservation_count(x_labels, observation_counts):
+		labels = []
+		oc_strs = MatPlotUtil.__get_zero_padded_strs(observation_counts)
+		for i in range(len(x_labels)):
+			labels.append("(OC=" + oc_strs[i]+") " + str(x_labels[i]))
+		return labels
+
+
+	@staticmethod
 	def boxplot_data(x, y, point_label, x_axis_name, y_axis_name, image_directory, graph_title):
 		# # plt.style.use('ggplot')
 		fig, ax = plt.subplots()
@@ -54,6 +73,7 @@ class MatPlotUtil:
 		data = MatPlotUtil.get_dict_vals_as_2d_list(dictionary)
 		labels = sorted(dictionary)
 		observation_counts = MatPlotUtil.__get_observation_counts(dictionary)
+		labels = MatPlotUtil.__get_labels_with_oobservation_count(labels, observation_counts)
 
 		# ax2 = ax.twiny()
 		# ax2.xaxis.set_minor_locator(LinearLocator())
@@ -100,7 +120,7 @@ class MatPlotUtil:
 		y_axis_labels = ["Resolve Time (sec)", "Closing Time (sec)", "Bug Fix Time (sec)"]
 		MatPlotUtil.plot_all_data(x_axis_datas, y_axis_datas, x_axis_labels, y_axis_labels, graph_folder)
 		MatPlotUtil.plot_partial_graph([x_axis_datas[1]], y_axis_datas, [x_axis_labels[1]], y_axis_labels, graph_folder, 120)
-		MatPlotUtil.plot_grouped_graph([x_axis_datas[1]], y_axis_datas, [x_axis_labels[1]], y_axis_labels, graph_folder, 100)
+		MatPlotUtil.plot_grouped_graph([x_axis_datas[1]], y_axis_datas, [x_axis_labels[1]], y_axis_labels, graph_folder, 50)
 
 	@staticmethod
 	def plot_partial_graph(x_axis_datas, y_axis_datas, x_axis_lables, y_axis_lables, graph_folder, counts_of_points_to_plot):
@@ -155,11 +175,13 @@ class MatPlotUtil:
 
 	@staticmethod
 	def __discard_low_density_data(dictionary): # discard keys if less than 5 value exists for this key
+		# print("before dic", dictionary)
 		new_dict = {}
 		for key in dictionary:
 			if len(dictionary[key]) >= 5:
 				new_dict[key] = dictionary[key]
-		return dictionary
+		# print("new dic", new_dict)
+		return new_dict
 
 	@staticmethod
 	def get_dict_vals_as_2d_list(dictionary):
@@ -214,7 +236,7 @@ class MatPlotUtil:
 		nxs = []
 		nys = []
 		for key in sorted(interval_dic):
-			interval_str = "{:05d}-{:05d}".format(key*interval_len, (key+1)*interval_len-1)
+			interval_str = "{:04d}-{:04d}".format(key*interval_len, (key+1)*interval_len-1)
 			for val in interval_dic[key]:
 				nxs.append(interval_str)
 				nys.append(val)
